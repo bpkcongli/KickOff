@@ -1,0 +1,139 @@
+#accordion {
+    margin-top: 20px;
+}
+
+.custom-card {
+    width: 650px;
+    margin: auto;
+}
+
+.card-header {
+    padding: 10px 15px;
+}
+
+.card-header .btn-link {
+    text-decoration: none;
+}
+
+.txt-align-center {
+    text-align: center;
+}
+
+#comp-date-stat-con {
+    display: inline-block;
+}
+
+.match-info-input {
+    margin-bottom: 20px;
+}
+
+.match-info-input, .match-info-input-lst {
+    display: flex;
+}
+
+.match-competition, .match-date, .match-status {
+    flex-basis: 33.33%;
+    font-size: 0.8rem;
+}
+
+.match-competition, .match-date {
+    margin-right: 10px;
+}
+
+.home-team, .away-team {
+    flex-basis: 50%;
+}
+
+.home-team {
+    margin-right: 10px;
+}
+
+#away-team-input:focus, #score-away-team-input:focus, .stats-input-box-at:focus {
+    border-color: rgba(220, 53, 69, 0.8);
+    box-shadow: 0 0 0 3px rgba(220, 53, 69, 0.4);
+    outline: 0 none;
+}
+
+.form-control {
+    font-size: 0.8rem;
+    height: calc(2.25rem + 2px);
+}
+
+.autocomplete-holder {
+    position: relative;
+    width: 100%;
+}
+
+.autocomplete {
+    position: absolute;
+    display: none;
+    width: 100%;
+    z-index: 10000;
+    box-shadow: 0 1px 3px 0 rgba(0,0,0,.2), 0 1px 1px 0 rgba(0,0,0,.14), 0 2px 1px -1px rgba(0,0,0,.12);
+    background-color: white;
+    text-align: left;
+    padding: 5px 0;
+}
+
+.autocomplete-li {
+    list-style-type: none;
+    padding: 5px 20px;
+}
+
+.autocomplete-li:hover {
+    background-color: #ccc;
+}
+
+.score-home-team, .score-away-team {
+    flex-basis: 50%;
+}
+
+.score-home-team {
+    margin-right: 10px;
+}
+
+.half-width {
+    width: 50%;
+}
+
+.stats {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.home-stats-header, .away-stats-header, .stats-input {
+    flex-basis: 30%;
+}
+
+.team-stats-header {
+    flex-basis: 40%;
+    text-align: center;
+    padding: 8px 0;
+}
+
+.away-stats-header {
+    text-align: right;
+}
+
+.home-stats-header h5, .team-stats-header h5, .away-stats-header h5 {
+    font-size: .875rem;
+}
+
+.stats-input-box-at {
+    text-align: right;
+}
+
+@media screen and (max-width: 680px) {
+    #accordion {
+        margin-top: 0;
+    }
+
+    .no-padding-margin {
+        margin: 0;
+        padding: 0;
+    }
+
+    .custom-card {
+        width: 100%;
+    }
+}

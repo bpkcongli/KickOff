@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <title>Adding New Matches</title>
+</head>
+<body>
+    <div class="container-fluid no-padding-margin">
+        <div class="row no-padding-margin">
+            <div class="col-lg-8 offset-lg-2 col-md-10 offset-md-1 no-padding-margin">
+                <div id="accordion">
+                    <div class="card custom-card">
+                        <div class="card-header" id="match-info-header">
+                            <h4 class="mb-0">
+                                <button class="btn btn-link" data-toggle="collapse" data-target="#match-info-body" aria-expanded="true" aria-controls="match-info-body">Match Information</button>
+                            </h4>
+                        </div>
+                        <div id="match-info-body" class="collapse show" aria-labelledby="match-info-header" data-parent="#accordion">
+                            <div class="card-body txt-align-center">
+                            <div id="comp-date-stat-con">
+                                <div class="match-info-input">
+                                    <div class="match-competition">
+                                        <div class="input-group">
+                                            <select class="custom-select" id="match-competition-input" required>
+                                                <option value="null" disabled selected hidden>Competition</option>
+                                                <option value="1">Premier League</option>
+                                                <option value="2">Serie A</option>
+                                                <option value="3">La Liga</option>
+                                                <option value="4">Bundesliga</option>
+                                                <option value="5">Ligue 1</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="match-date">
+                                        <div class="input-group">
+                                            <input class="form-control" type="text" id="match-date-input" placeholder="Match Date">
+                                        </div>
+                                    </div>
+                                    <div class="match-status">
+                                        <div class="input-group">
+                                            <select class="custom-select" id="match-status-input" required>
+                                                <option value="null" disabled selected hidden>Status</option>
+                                                <option value="1">SCHEDULED</option>
+                                                <option value="2">FINISHED</option>
+                                                <option value="3">POSTPONED</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="match-info-input">
+                                <div class="home-team">
+                                    <div class="input-group">
+                                        <input type="text" class="form-control border-primary" id="home-team-input" placeholder="Home Team">
+                                        <div class="input-group-append">
+                                            <button class="btn btn-outline-primary" type="button">Search</button>
+                                        </div>
+                                    </div>
+                                    <div class="autocomplete-holder">
+                                        <div class="autocomplete">
+                                            <li class="autocomplete-li">Liverpool</li>
+                                            <li class="autocomplete-li">Aston Villa</li>
+                                            <li class="autocomplete-li">Manchester City</li>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="away-team">
+                                    <div class="input-group">
+                                        <div class="input-group-prepend">
+                                            <button class="btn btn-outline-danger" type="Away Team">Search</button>
+                                        </div>
+                                        <input type="text" class="form-control border-danger" id="away-team-input" placeholder="Away Team">
+                                    </div>
+                                    <div class="autocomplete-holder">
+                                        <div class="autocomplete">
+                                            <li class="autocomplete-li">Liverpool</li>
+                                            <li class="autocomplete-li">Aston Villa</li>
+                                            <li class="autocomplete-li">Manchester City</li>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="match-info-input-lst">
+                                <div class="score-home-team">
+                                    <div class="input-group half-width" style="float: right;">
+                                        <input class="form-control border-primary" type="text" id="score-home-team-input" placeholder="Score HT">
+                                    </div>
+                                </div>
+                                <div class="score-away-team">
+                                    <div class="input-group half-width">
+                                        <input class="form-control text-right border-danger" type="text" id="score-away-team-input" placeholder="Score AT">
+                                    </div>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card custom-card">
+                        <div class="card-header" id="goals-info-header">
+                            <h4 class="mb-0">
+                                <button class="btn btn-link" data-toggle="collapse" data-target="#goals-info-body" aria-expanded="true" aria-controls="goals-info-body">Goals Information</button>
+                            </h4>
+                        </div>
+                        <div id="goals-info-body" class="collapse" aria-labelledby="goals-info-header" data-parent="#accordion">
+                            <div class="card-body txt-align-center">
+                                Ini adalah halaman Goals Info.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card custom-card">
+                        <div class="card-header" id="match-statistics-header">
+                            <h4 class="mb-0">
+                                <button class="btn btn-link" data-toggle="collapse" data-target="#match-statistics-body" aria-expanded="true" aria-controls="match-statistics-body">Match Statistics</button>
+                            </h4>
+                        </div>
+                        <div id="match-statistics-body" class="collapse" aria-labelledby="match-statistics-header" data-parent="#accordion">
+                            <div class="card-body">
+                                <div class="stats">
+                                    <div class="home-stats-header">
+                                        <h5 class="mb-0">HOME</h5>
+                                    </div>
+                                    <div class="team-stats-header">
+                                        <h5 class="mb-0">TEAM STATS</h5>
+                                    </div>
+                                    <div class="away-stats-header">
+                                        <h5 class="mb-0">AWAY</h5>
+                                    </div>
+                                </div>
+                                <div class="stats">
+                                    <div class="stats-input">
+                                        <div class="input-group">
+                                            <input class="form-control border-primary stats-input-box-ht" type="text" placeholder="Shots HT">
+                                        </div>
+                                    </div>
+                                    <div class="team-stats-header">
+                                        <span>SHOTS</span>
+                                    </div>
+                                    <div class="stats-input">
+                                        <div class="input-group">
+                                            <input class="form-control border-danger stats-input-box-at" type="text" placeholder="Shots AT">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="stats">
+                                    <div class="team-stats-header">
+                                        <h5 class="mb-0">SHOTS ON TARGET</h5>
+                                    </div>
+                                </div>
+                                <div class="stats">
+                                    <div class="team-stats-header">
+                                        <h5 class="mb-0">POSSESSION</h5>
+                                    </div>
+                                </div>
+                                <div class="stats">
+                                    <div class="team-stats-header">
+                                        <h5 class="mb-0">PASSES</h5>
+                                    </div>
+                                </div>
+                                <div class="stats">
+                                    <div class="team-stats-header">
+                                        <h5 class="mb-0">PASS ACCURACY</h5>
+                                    </div>
+                                </div>
+                                <div class="stats">
+                                    <div class="team-stats-header">
+                                        <h5 class="mb-0">FOULS</h5>
+                                    </div>
+                                </div>
+                                <div class="stats">
+                                    <div class="team-stats-header">
+                                        <h5 class="mb-0">YELLOW CARDS</h5>
+                                    </div>
+                                </div>
+                                <div class="stats">
+                                    <div class="team-stats-header">
+                                        <h5 class="mb-0">RED CARDS</h5>
+                                    </div>
+                                </div>
+                                <div class="stats">
+                                    <div class="team-stats-header">
+                                        <h5 class="mb-0">OFFSIDES</h5>
+                                    </div>
+                                </div>
+                                <div class="stats">
+                                    <div class="team-stats-header">
+                                        <h5 class="mb-0">CORNERS</h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>
