@@ -15,11 +15,7 @@
     text-decoration: none;
 }
 
-.txt-align-center {
-    text-align: center;
-}
-
-#comp-date-stat-con {
+#compDateStatCon {
     display: inline-block;
 }
 
@@ -27,7 +23,7 @@
     margin-bottom: 20px;
 }
 
-.match-info-input, .match-info-input-lst {
+.match-info-input, .match-info-input-lst, .stats, .goals-info {
     display: flex;
 }
 
@@ -40,7 +36,7 @@
     margin-right: 10px;
 }
 
-.home-team, .away-team {
+.home-team, .away-team, .score-home-team, .score-away-team, .goals-info-home, .goals-info-away {
     flex-basis: 50%;
 }
 
@@ -71,7 +67,6 @@
     z-index: 10000;
     box-shadow: 0 1px 3px 0 rgba(0,0,0,.2), 0 1px 1px 0 rgba(0,0,0,.14), 0 2px 1px -1px rgba(0,0,0,.12);
     background-color: white;
-    text-align: left;
     padding: 5px 0;
 }
 
@@ -84,10 +79,6 @@
     background-color: #ccc;
 }
 
-.score-home-team, .score-away-team {
-    flex-basis: 50%;
-}
-
 .score-home-team {
     margin-right: 10px;
 }
@@ -97,7 +88,6 @@
 }
 
 .stats {
-    display: flex;
     margin-bottom: 20px;
 }
 
@@ -105,22 +95,36 @@
     flex-basis: 30%;
 }
 
-.team-stats-header {
+.team-stats-header, .stat-categories-header {
     flex-basis: 40%;
+}
+
+.stat-categories-header {
     text-align: center;
     padding: 8px 0;
 }
 
-.away-stats-header {
-    text-align: right;
+.goals-info-home {
+    margin-right: 10px;
 }
 
-.home-stats-header h5, .team-stats-header h5, .away-stats-header h5 {
-    font-size: .875rem;
+.min-pen-og-con {
+    display: flex;
+    margin-top: 10px;
 }
 
-.stats-input-box-at {
-    text-align: right;
+.minutes {
+    flex-basis: 50%;
+}
+
+.penalty, .own-goal {
+    flex-basis: 25%;
+    margin-left: 10px;
+}
+
+.penalty span, .own-goal span {
+    display: inline-block;
+    margin-left: 10px;
 }
 
 @media screen and (max-width: 680px) {

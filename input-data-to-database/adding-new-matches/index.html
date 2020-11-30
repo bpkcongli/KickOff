@@ -13,18 +13,18 @@
             <div class="col-lg-8 offset-lg-2 col-md-10 offset-md-1 no-padding-margin">
                 <div id="accordion">
                     <div class="card custom-card">
-                        <div class="card-header" id="match-info-header">
+                        <div class="card-header" id="matchInfoHeader">
                             <h4 class="mb-0">
-                                <button class="btn btn-link" data-toggle="collapse" data-target="#match-info-body" aria-expanded="true" aria-controls="match-info-body">Match Information</button>
+                                <button class="btn btn-link" data-toggle="collapse" data-target="#matchInfoBody" aria-expanded="true" aria-controls="matchInfoBody">Match Information</button>
                             </h4>
                         </div>
-                        <div id="match-info-body" class="collapse show" aria-labelledby="match-info-header" data-parent="#accordion">
-                            <div class="card-body txt-align-center">
-                            <div id="comp-date-stat-con">
+                        <div id="matchInfoBody" class="collapse show" aria-labelledby="matchInfoHeader" data-parent="#accordion">
+                            <div class="card-body text-center">
+                            <div id="compDateStatCon">
                                 <div class="match-info-input">
                                     <div class="match-competition">
                                         <div class="input-group">
-                                            <select class="custom-select" id="match-competition-input" required>
+                                            <select class="custom-select" id="matchCompetitionInput" required>
                                                 <option value="null" disabled selected hidden>Competition</option>
                                                 <option value="1">Premier League</option>
                                                 <option value="2">Serie A</option>
@@ -36,12 +36,12 @@
                                     </div>
                                     <div class="match-date">
                                         <div class="input-group">
-                                            <input class="form-control" type="text" id="match-date-input" placeholder="Match Date">
+                                            <input class="form-control" type="text" id="matchDateInput" placeholder="Match Date" required>
                                         </div>
                                     </div>
                                     <div class="match-status">
                                         <div class="input-group">
-                                            <select class="custom-select" id="match-status-input" required>
+                                            <select class="custom-select" id="matchStatusInput" required>
                                                 <option value="null" disabled selected hidden>Status</option>
                                                 <option value="1">SCHEDULED</option>
                                                 <option value="2">FINISHED</option>
@@ -54,13 +54,13 @@
                             <div class="match-info-input">
                                 <div class="home-team">
                                     <div class="input-group">
-                                        <input type="text" class="form-control border-primary" id="home-team-input" placeholder="Home Team">
+                                        <input type="text" class="form-control border-primary" id="homeTeamInput" placeholder="Home Team">
                                         <div class="input-group-append">
-                                            <button class="btn btn-outline-primary" type="button">Search</button>
+                                            <button class="btn btn-outline-primary" type="button" id="homeTeamInputBtn">Search</button>
                                         </div>
                                     </div>
                                     <div class="autocomplete-holder">
-                                        <div class="autocomplete">
+                                        <div class="autocomplete text-left">
                                             <li class="autocomplete-li">Liverpool</li>
                                             <li class="autocomplete-li">Aston Villa</li>
                                             <li class="autocomplete-li">Manchester City</li>
@@ -99,18 +99,6 @@
                         </div>
                     </div>
                     <div class="card custom-card">
-                        <div class="card-header" id="goals-info-header">
-                            <h4 class="mb-0">
-                                <button class="btn btn-link" data-toggle="collapse" data-target="#goals-info-body" aria-expanded="true" aria-controls="goals-info-body">Goals Information</button>
-                            </h4>
-                        </div>
-                        <div id="goals-info-body" class="collapse" aria-labelledby="goals-info-header" data-parent="#accordion">
-                            <div class="card-body txt-align-center">
-                                Ini adalah halaman Goals Info.
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card custom-card">
                         <div class="card-header" id="match-statistics-header">
                             <h4 class="mb-0">
                                 <button class="btn btn-link" data-toggle="collapse" data-target="#match-statistics-body" aria-expanded="true" aria-controls="match-statistics-body">Match Statistics</button>
@@ -122,163 +110,284 @@
                                     <div class="home-stats-header">
                                         <h5 class="mb-0">HOME</h5>
                                     </div>
-                                    <div class="team-stats-header">
+                                    <div class="team-stats-header text-center">
                                         <h5 class="mb-0">TEAM STATS</h5>
                                     </div>
-                                    <div class="away-stats-header">
+                                    <div class="away-stats-header text-right">
                                         <h5 class="mb-0">AWAY</h5>
                                     </div>
-                                </div>
+                                </div>   
                                 <div class="stats">
                                     <div class="stats-input">
                                         <div class="input-group">
-                                            <input class="form-control border-primary stats-input-box-ht" type="text" placeholder="Shots HT">
+                                            <input class="form-control border-primary" type="text" placeholder="Shots HT">
                                         </div>
                                     </div>
-                                    <div class="team-stats-header">
+                                    <div class="stat-categories-header">
                                         <span>SHOTS</span>
                                     </div>
                                     <div class="stats-input">
                                         <div class="input-group">
-                                            <input class="form-control border-danger stats-input-box-at" type="text" placeholder="Shots AT">
+                                            <input class="form-control border-danger text-right" type="text" placeholder="Shots AT">
                                         </div>
                                     </div>
                                 </div>
                                 <div class="stats">
                                     <div class="stats-input">
                                         <div class="input-group">
-                                            <input class="form-control border-primary stats-input-box-ht" type="text" placeholder="Shots On Target HT">
+                                            <input class="form-control border-primary" type="text" placeholder="Shots On Target HT">
                                         </div>
                                     </div>
-                                    <div class="team-stats-header">
+                                    <div class="stat-categories-header">
                                         <span>SHOTS ON TARGET</span>
                                     </div>
                                     <div class="stats-input">
                                         <div class="input-group">
-                                            <input class="form-control border-danger stats-input-box-at" type="text" placeholder="Shots On Target AT">
+                                            <input class="form-control border-danger text-right" type="text" placeholder="Shots On Target AT">
                                         </div>
                                     </div>
                                 </div>
                                 <div class="stats">
                                     <div class="stats-input">
                                         <div class="input-group">
-                                            <input class="form-control border-primary stats-input-box-ht" type="text" placeholder="Possession HT">
+                                            <input class="form-control border-primary" type="text" placeholder="Possession HT">
                                         </div>
                                     </div>
-                                    <div class="team-stats-header">
+                                    <div class="stat-categories-header">
                                         <span>POSSESSION</span>
                                     </div>
                                     <div class="stats-input">
                                         <div class="input-group">
-                                            <input class="form-control border-danger stats-input-box-at" type="text" placeholder="Possession AT">
+                                            <input class="form-control border-danger text-right" type="text" placeholder="Possession AT">
                                         </div>
                                     </div>
                                 </div>
                                 <div class="stats">
                                     <div class="stats-input">
                                         <div class="input-group">
-                                            <input class="form-control border-primary stats-input-box-ht" type="text" placeholder="Passes HT">
+                                            <input class="form-control border-primary" type="text" placeholder="Passes HT">
                                         </div>
                                     </div>
-                                    <div class="team-stats-header">
+                                    <div class="stat-categories-header">
                                         <span>PASSES</span>
                                     </div>
                                     <div class="stats-input">
                                         <div class="input-group">
-                                            <input class="form-control border-danger stats-input-box-at" type="text" placeholder="Passes AT">
+                                            <input class="form-control border-danger text-right" type="text" placeholder="Passes AT">
                                         </div>
                                     </div>
                                 </div>
                                 <div class="stats">
                                     <div class="stats-input">
                                         <div class="input-group">
-                                            <input class="form-control border-primary stats-input-box-ht" type="text" placeholder="Pass Accuracy HT">
+                                            <input class="form-control border-primary" type="text" placeholder="Pass Accuracy HT">
                                         </div>
                                     </div>
-                                    <div class="team-stats-header">
+                                    <div class="stat-categories-header">
                                         <span>PASS ACCURACY</span>
                                     </div>
                                     <div class="stats-input">
                                         <div class="input-group">
-                                            <input class="form-control border-danger stats-input-box-at" type="text" placeholder="Pass Accuracy AT">
+                                            <input class="form-control border-danger text-right" type="text" placeholder="Pass Accuracy AT">
                                         </div>
                                     </div>
                                 </div>
                                 <div class="stats">
                                     <div class="stats-input">
                                         <div class="input-group">
-                                            <input class="form-control border-primary stats-input-box-ht" type="text" placeholder="Fouls HT">
+                                            <input class="form-control border-primary" type="text" placeholder="Fouls HT">
                                         </div>
                                     </div>
-                                    <div class="team-stats-header">
+                                    <div class="stat-categories-header">
                                         <span>FOULS</span>
                                     </div>
                                     <div class="stats-input">
                                         <div class="input-group">
-                                            <input class="form-control border-danger stats-input-box-at" type="text" placeholder="Fouls AT">
+                                            <input class="form-control border-danger text-right" type="text" placeholder="Fouls AT">
                                         </div>
                                     </div>
                                 </div>
                                 <div class="stats">
                                     <div class="stats-input">
                                         <div class="input-group">
-                                            <input class="form-control border-primary stats-input-box-ht" type="text" placeholder="Yellow Cards HT">
+                                            <input class="form-control border-primary" type="text" placeholder="Yellow Cards HT">
                                         </div>
                                     </div>
-                                    <div class="team-stats-header">
+                                    <div class="stat-categories-header">
                                         <span>YELLOW CARDS</span>
                                     </div>
                                     <div class="stats-input">
                                         <div class="input-group">
-                                            <input class="form-control border-danger stats-input-box-at" type="text" placeholder="Yellow Cards AT">
+                                            <input class="form-control border-danger text-right" type="text" placeholder="Yellow Cards AT">
                                         </div>
                                     </div>
                                 </div>
                                 <div class="stats">
                                     <div class="stats-input">
                                         <div class="input-group">
-                                            <input class="form-control border-primary stats-input-box-ht" type="text" placeholder="Red Cards HT">
+                                            <input class="form-control border-primary" type="text" placeholder="Red Cards HT">
                                         </div>
                                     </div>
-                                    <div class="team-stats-header">
+                                    <div class="stat-categories-header">
                                         <span>RED CARDS</span>
                                     </div>
                                     <div class="stats-input">
                                         <div class="input-group">
-                                            <input class="form-control border-danger stats-input-box-at" type="text" placeholder="Red Cards AT">
+                                            <input class="form-control border-danger text-right" type="text" placeholder="Red Cards AT">
                                         </div>
                                     </div>
                                 </div>
                                 <div class="stats">
                                     <div class="stats-input">
                                         <div class="input-group">
-                                            <input class="form-control border-primary stats-input-box-ht" type="text" placeholder="Offsides HT">
+                                            <input class="form-control border-primary" type="text" placeholder="Offsides HT">
                                         </div>
                                     </div>
-                                    <div class="team-stats-header">
+                                    <div class="stat-categories-header">
                                         <span>OFFSIDES</span>
                                     </div>
                                     <div class="stats-input">
                                         <div class="input-group">
-                                            <input class="form-control border-danger stats-input-box-at" type="text" placeholder="Offsides AT">
+                                            <input class="form-control border-danger text-right" type="text" placeholder="Offsides AT">
                                         </div>
                                     </div>
                                 </div>
                                 <div class="stats">
                                     <div class="stats-input">
                                         <div class="input-group">
-                                            <input class="form-control border-primary stats-input-box-ht" type="text" placeholder="Corners HT">
+                                            <input class="form-control border-primary" type="text" placeholder="Corners HT">
                                         </div>
                                     </div>
-                                    <div class="team-stats-header">
+                                    <div class="stat-categories-header">
                                         <span>CORNERS</span>
                                     </div>
                                     <div class="stats-input">
                                         <div class="input-group">
-                                            <input class="form-control border-danger stats-input-box-at" type="text" placeholder="Corners AT">
+                                            <input class="form-control border-danger text-right" type="text" placeholder="Corners AT">
                                         </div>
                                     </div>
                                 </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card custom-card">
+                        <div class="card-header" id="goals-info-header">
+                            <h4 class="mb-0">
+                                <button class="btn btn-link" data-toggle="collapse" data-target="#goals-info-body" aria-expanded="true" aria-controls="goals-info-body">Goals Information</button>
+                            </h4>
+                        </div>
+                        <div id="goals-info-body" class="collapse" aria-labelledby="goals-info-header" data-parent="#accordion">
+                            <div class="card-body text-center">
+                                <div class="goals-info">
+                                    <div class="goals-info-home text-left">
+                                        <h5>HOME</h5>
+                                        <div class="input-group">
+                                            <input type="text" class="form-control border-primary" placeholder="Player Name HT">
+                                            <div class="input-group-append">
+                                                <button class="btn btn-outline-primary" type="button">Search</button>
+                                            </div>
+                                        </div>
+                                        <div class="autocomplete-holder">
+                                            <div class="autocomplete text-left">
+                                                <li class="autocomplete-li">Liverpool</li>
+                                                <li class="autocomplete-li">Aston Villa</li>
+                                                <li class="autocomplete-li">Manchester City</li>
+                                            </div>
+                                        </div>
+                                        <div class="min-pen-og-con text-left">
+                                            <div class="minutes">
+                                                <div class="input-group">
+                                                    <input class="form-control" type="text" placeholder="Match Date">
+                                                </div>
+                                            </div>
+                                            <div class="penalty">
+                                                <div class="input-group-text">
+                                                    <input type="checkbox" aria-label="Checkbox for following text input">
+                                                    <span>P</span>
+                                                </div>
+                                            </div>
+                                            <div class="own-goal">
+                                                <div class="input-group-text">
+                                                    <input type="checkbox" aria-label="Checkbox for following text input">
+                                                    <span>OG</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="goals-info-away text-right">
+                                        <h5>AWAY</h5>
+                                        <div class="input-container">
+                                            <div class="input-group">
+                                                <div class="input-group-prepend">
+                                                    <button class="btn btn-outline-danger" type="button">Search</button>
+                                                </div>
+                                                <input type="text" class="form-control border-danger" placeholder="Player Name AT">
+                                            </div>
+                                            <div class="autocomplete-holder">
+                                                <div class="autocomplete text-left">
+                                                    <li class="autocomplete-li">Liverpool</li>
+                                                    <li class="autocomplete-li">Aston Villa</li>
+                                                    <li class="autocomplete-li">Manchester City</li>
+                                                </div>
+                                            </div>
+                                       </div>
+                                       <div class="min-pen-og-con text-left">
+                                            <div class="minutes">
+                                                <div class="input-group">
+                                                    <input class="form-control" type="text" placeholder="Match Date">
+                                                </div>
+                                            </div>
+                                            <div class="penalty">
+                                                <div class="input-group-text">
+                                                    <input type="checkbox" aria-label="Checkbox for following text input">
+                                                    <span>P</span>
+                                                </div>
+                                            </div>
+                                            <div class="own-goal">
+                                                <div class="input-group-text">
+                                                    <input type="checkbox" aria-label="Checkbox for following text input">
+                                                    <span>OG</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card custom-card">
+                        <div class="card-header" id="assists-info-header">
+                            <h4 class="mb-0">
+                                <button class="btn btn-link" data-toggle="collapse" data-target="#assists-info-body" aria-expanded="true" aria-controls="assists-info-body">Assists Information</button>
+                            </h4>
+                        </div>
+                        <div id="assists-info-body" class="collapse" aria-labelledby="assists-info-header" data-parent="#accordion">
+                            <div class="card-body text-center">
+                                Ini adalah halaman Assists Information.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card custom-card">
+                        <div class="card-header" id="yellow-cards-info-header">
+                            <h4 class="mb-0">
+                                <button class="btn btn-link" data-toggle="collapse" data-target="#yellow-cards-info-body" aria-expanded="true" aria-controls="yellow-cards-info-body">Yellow Cards Information</button>
+                            </h4>
+                        </div>
+                        <div id="yellow-cards-info-body" class="collapse" aria-labelledby="yellow-cards-info-header" data-parent="#accordion">
+                            <div class="card-body text-center">
+                                Ini adalah halaman Yellow Cards Information.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card custom-card">
+                        <div class="card-header" id="red-cards-info-header">
+                            <h4 class="mb-0">
+                                <button class="btn btn-link" data-toggle="collapse" data-target="#red-cards-info-body" aria-expanded="true" aria-controls="red-cards-info-body">Red Cards Information</button>
+                            </h4>
+                        </div>
+                        <div id="red-cards-info-body" class="collapse" aria-labelledby="red-cards-info-header" data-parent="#accordion">
+                            <div class="card-body text-center">
+                                Ini adalah halaman Red Cards Information.
                             </div>
                         </div>
                     </div>
@@ -289,5 +398,6 @@
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="scripts.js"></script>
 </body>
 </html>
