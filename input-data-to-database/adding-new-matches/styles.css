@@ -27,24 +27,24 @@
     display: flex;
 }
 
-.match-competition, .match-date, .match-status {
+#matchCompetition, #matchDate, #matchStatus {
     flex-basis: 33.33%;
     font-size: 0.8rem;
 }
 
-.match-competition, .match-date {
+#matchCompetition, #matchDate {
     margin-right: 10px;
 }
 
-.home-team, .away-team, .score-home-team, .score-away-team, .goals-info-home, .goals-info-away {
+#homeTeam, #awayTeam, .score-home-team, .score-away-team, .goals-info-home, .goals-info-away {
     flex-basis: 50%;
 }
 
-.home-team {
+#homeTeam {
     margin-right: 10px;
 }
 
-#away-team-input:focus, #score-away-team-input:focus, .stats-input-box-at:focus {
+#awayTeamInput:focus, #score-away-team-input:focus, .stats-input-box-at:focus {
     border-color: rgba(220, 53, 69, 0.8);
     box-shadow: 0 0 0 3px rgba(220, 53, 69, 0.4);
     outline: 0 none;

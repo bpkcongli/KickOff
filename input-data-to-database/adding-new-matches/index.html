@@ -22,7 +22,7 @@
                             <div class="card-body text-center">
                             <div id="compDateStatCon">
                                 <div class="match-info-input">
-                                    <div class="match-competition">
+                                    <div id="matchCompetition">
                                         <div class="input-group">
                                             <select class="custom-select" id="matchCompetitionInput" required>
                                                 <option value="null" disabled selected hidden>Competition</option>
@@ -34,12 +34,12 @@
                                             </select>
                                         </div>
                                     </div>
-                                    <div class="match-date">
+                                    <div id="matchDate">
                                         <div class="input-group">
-                                            <input class="form-control" type="text" id="matchDateInput" placeholder="Match Date" required>
+                                            <input class="form-control" type="text" id="matchDateInput" placeholder="Match Date">
                                         </div>
                                     </div>
-                                    <div class="match-status">
+                                    <div id="matchStatus">
                                         <div class="input-group">
                                             <select class="custom-select" id="matchStatusInput" required>
                                                 <option value="null" disabled selected hidden>Status</option>
@@ -52,7 +52,7 @@
                                 </div>
                             </div>
                             <div class="match-info-input">
-                                <div class="home-team">
+                                <div id="homeTeam">
                                     <div class="input-group">
                                         <input type="text" class="form-control border-primary" id="homeTeamInput" placeholder="Home Team">
                                         <div class="input-group-append">
@@ -67,12 +67,12 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="away-team">
+                                <div id="awayTeam">
                                     <div class="input-group">
                                         <div class="input-group-prepend">
-                                            <button class="btn btn-outline-danger" type="Away Team">Search</button>
+                                            <button class="btn btn-outline-danger" type="button" id="awayTeamInputBtn">Search</button>
                                         </div>
-                                        <input type="text" class="form-control border-danger" id="away-team-input" placeholder="Away Team">
+                                        <input type="text" class="form-control border-danger" id="awayTeamInput" placeholder="Away Team">
                                     </div>
                                     <div class="autocomplete-holder">
                                         <div class="autocomplete">
