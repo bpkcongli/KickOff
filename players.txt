@@ -1,5 +1,4 @@
 name;image_url_fr_internet;image_url_fr_server;date_of_birth;place_of_birth;nationality;height;prefer_position_id;position_id;team_id;shirt_number;rating
-_-_-_
 Karl Jakob Hein;https://tmssl.akamaized.net/images/foto/normal/karl-hein-fc-arsenal-1574328281-27612.jpg;base_url/resources/images/players-pict/premier-league/arsenal/karl-jakob-hein.webp;2002-04-13;Põlva, Estonia;Estonia;1.93;1;1;1;44;-
 Bernd Leno;https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/20180602_FIFA_Friendly_Match_Austria_vs._Germany_Bernd_Leno_850_0646.jpg/1200px-20180602_FIFA_Friendly_Match_Austria_vs._Germany_Bernd_Leno_850_0646.jpg;base_url/resources/images/players-pict/premier-league/arsenal/bernd-leno.webp;1992-03-04;Bietigheim-Bissingen, Germany;Germany;1.90;1;1;1;1;82
 Matt Macey;https://upload.wikimedia.org/wikipedia/commons/1/13/Matthew_Macey_cropped.jpg;base_url/resources/images/players-pict/premier-league/arsenal/matt-macey.webp;1994-09-09;Bath, England;England;2.01;1;1;1;33;-
@@ -33,7 +32,7 @@ Reiss Nelson;https://pbs.twimg.com/profile_images/1145638330333351937/GOuGLCKk_4
 Pierre-Emerick Aubameyang;https://ligacdn.com/storage/images/news/2020/08/17/aubameyang-beri-kode-segera-perpanjang-kontrak-di-arsenal.jpeg;base_url/resources/images/players-pict/premier-league/arsenal/pierre-emerick-aubameyang.webp;1989-06-18;Laval, France;Gabon;1.87;18;13;1;14;89
 Gabriel Martinelli;https://img.okezone.com/content/2020/03/25/45/2188616/gabriel-martinelli-saya-ingin-jadi-legenda-di-arsenal-RT7Fne2mxn.jpg;base_url/resources/images/players-pict/premier-league/arsenal/gabriel-martinelli.webp;2001-06-18;Guarulhos, Brazil;Brazil;1.80;13;9;1;35;-
 Eddie Nketiah;https://upload.wikimedia.org/wikipedia/commons/3/38/Eddie_Nketiah%2C_2017-10-24.jpg;base_url/resources/images/players-pict/premier-league/arsenal/eddie-nketiah.webp;1999-05-30;Lewisham, London, England;England;1.80;18;18;1;30;69
-_-_-_
+
 Tom Heaton;https://www.sportinglife.com/images/news/945x532/ea5c429e-4b3e-4d04-b542-539c065232ee.jpg;base_url/resources/images/players-pict/premier-league/aston-villa/tom-heaton.webp;1986-04-15;Chester, England;England;1.88;1;1;2;1;68
 Lovre Kalinić;https://upload.wikimedia.org/wikipedia/commons/3/3b/Lovre_Kalini%C4%87_in_2018.jpg;base_url/resources/images/players-pict/premier-league/aston-villa/lovre-kalinic.webp;1990-04-03;Split, Croatia;Croatia;2.01;1;1;2;28;53
 Emiliano Martínez;https://images.daznservices.com/di/library/GOAL/6b/8a/emiliano-martinez-aston-villa-2020-21_1duptmdz1wukf1indonkedok2k.jpg;base_url/resources/images/players-pict/premier-league/aston-villa/emiliano-martinez.webp;1992-09-02;Mar del Plata, Argentina;Argentina;1.95;1;1;2;26;84
@@ -60,7 +59,7 @@ Anwar El Ghazi;https://cdn.mos.cms.futurecdn.net/cecdYN2G4npqGqv6RRPEgh-1200-80.
 Keinan Davis;https://i2-prod.birminghammail.co.uk/incoming/article12939177.ece/ALTERNATES/s1200c/JS101615734.jpg;base_url/resources/images/players-pict/premier-league/aston-villa/keinan-davis.webp;1998-02-13;Stevenage, England;England;1.91;18;18;2;39;-
 Wesley Moraes;https://cdn.vox-cdn.com/thumbor/1PVX6NNXaMurp585pOtT3RuthW8=/1400x1400/filters:format(jpeg)/cdn.vox-cdn.com/uploads/chorus_asset/file/19349163/1185121427.jpg.jpg;base_url/resources/images/players-pict/premier-league/aston-villa/wesley-moraes.webp;1996-11-26;Juiz de Fora, Brazil;Brazil;1.91;18;18;2;9;67
 Ollie Watkins;https://www.sheffieldunited.news/static/uploads/11/2020/09/GettyImages-1228534489.jpg;base_url/resources/images/players-pict/premier-league/aston-villa/ollie-watkins.webp;1995-12-30;Torquay, England;England;1.80;18;14;2;11;73
-_-_-_
+
 Robert Sánchez;https://pbs.twimg.com/profile_images/836308353093611527/i4O67n1w.jpg;base_url/resources/images/players-pict/premier-league/brighton/robert-sanchez.webp;1997-11-18;Cartagena, Spain;Spain;1.97;1;1;3;26;-
 Mathew Ryan;https://s.hs-data.com/bilder/spieler/gross/153979.jpg;base_url/resources/images/players-pict/premier-league/brighton/mathew-ryan.webp;1992-04-08;Plumpton, New South Wales, Australia;Australia;1.84;1;1;3;1;71
 Jason Steele;https://resources.premierleague.com/premierleague/photo/2019/10/20/61ee1c53-3b98-416f-ab26-aa87d5dbe75f/Jason-Steele-Brighton.jpg;base_url/resources/images/players-pict/premier-league/brighton/jason-steele.webp;1990-08-18;Newton Aycliffe, England;England;1.88;1;1;3;23;46
@@ -91,7 +90,7 @@ Florin Andone;https://s.hs-data.com/bilder/spieler/gross/211814.jpg;base_url/res
 Aaron Connolly;https://s.hs-data.com/bilder/spieler/gross/374141.jpg;base_url/resources/images/players-pict/premier-league/brighton/aaron-connolly.webp;2000-01-28;Galway, Republic of Ireland;Republic of Ireland;1.75;18;18;3;7;66
 Neal Maupay;https://s.hs-data.com/bilder/spieler/gross/221416.jpg;base_url/resources/images/players-pict/premier-league/brighton/neal-maupay.webp;1996-08-14;Versailles, France;France;1.73;18;18;3;9;78
 Andi Zeqiri;https://s.hs-data.com/bilder/spieler/gross/311783.jpg;base_url/resources/images/players-pict/premier-league/brighton/andi-zeqiri.webp;1999-06-22;Lausanne, Switzerland;Switzerland;1.85;13;18;3;29;-
-_-_-_
+
 Will Norris;https://s.hs-data.com/bilder/spieler/gross/260756.jpg;base_url/resources/images/players-pict/premier-league/burnley/will-norris.webp;1993-08-12;Watford, England;England;1.95;1;1;4;25;-
 Bailey Peacock-Farrell;https://s.hs-data.com/bilder/spieler/gross/338166.jpg;base_url/resources/images/players-pict/premier-league/burnley/bailey-peacock-farrell.webp;1996-10-29;Darlington, England;Northern Ireland;1.93;1;1;4;15;56
 Nick Pope;https://s.hs-data.com/bilder/spieler/gross/194364.jpg;base_url/resources/images/players-pict/premier-league/burnley/nick-pope.webp;1992-04-19;Soham, England;England;1.91;1;1;4;1;83
@@ -117,7 +116,7 @@ Max Thompson;https://s.hs-data.com/bilder/spieler/gross/433326.jpg;base_url/reso
 Ashley Barnes;https://s.hs-data.com/bilder/spieler/gross/95078.jpg;base_url/resources/images/players-pict/premier-league/burnley/ashley-barnes.webp;1989-10-30;Bath, England;England;1.86;18;18;4;10;61
 Chris Wood;https://s.hs-data.com/bilder/spieler/gross/140366.jpg;base_url/resources/images/players-pict/premier-league/burnley/chris-wood.webp;1991-12-07;Auckland, New Zealand;New Zealand;1.91;18;18;4;9;74
 Matěj Vydra;https://s.hs-data.com/bilder/spieler/gross/161462.jpg;base_url/resources/images/players-pict/premier-league/burnley/matej-vydra.webp;1992-05-01;Chotěboř, Czechoslovakia;Czech Republic;1.80;16;12;4;27;66
-_-_-_
+
 Kepa Arrizabalaga;https://s.hs-data.com/bilder/spieler/gross/204234.jpg;base_url/resources/images/players-pict/premier-league/chelsea/kepa-arrizabalaga.webp;1994-10-03;Ondarroa, Spain;Spain;1.86;1;1;5;1;71
 Willy Caballero;https://s.hs-data.com/bilder/spieler/gross/17550.jpg;base_url/resources/images/players-pict/premier-league/chelsea/willy-caballero.webp;1981-09-28;Santa Elena, Argentina;Argentina;1.86;1;1;5;13;64
 Edouard Mendy;https://s.hs-data.com/bilder/spieler/gross/361214.jpg;base_url/resources/images/players-pict/premier-league/chelsea/edouard-mendy.webp;1992-03-01;Montivilliers, France;Senegal;1.97;1;1;5;16;80
@@ -145,7 +144,7 @@ Callum Hudson-Odoi;https://s.hs-data.com/bilder/spieler/gross/369994.jpg;base_ur
 Tammy Abraham;https://s.hs-data.com/bilder/spieler/gross/267144.jpg;base_url/resources/images/players-pict/premier-league/chelsea/tammy-abraham.webp;1997-10-02;Camberwell, England;England;1.90;18;18;5;9;74
 Olivier Giroud;https://s.hs-data.com/bilder/spieler/gross/59947.jpg;base_url/resources/images/players-pict/premier-league/chelsea/olivier-giroud.webp;1986-09-30;Chambéry, France;France;1.93;18;18;5;18;81
 Timo Werner;https://s.hs-data.com/bilder/spieler/gross/198286.jpg;base_url/resources/images/players-pict/premier-league/chelsea/timo-werner.webp;1996-03-06;Stuttgart, Germany;Germany;1.80;18;13;5;11;93
-_-_-_
+
 Jack Butland;https://upload.wikimedia.org/wikipedia/commons/6/69/Butland_2018.jpg;base_url/resources/images/players-pict/premier-league/crystal-palace/jack-butland.webp;1993-03-10;Bristol, England;England;1.96;1;1;6;1;60
 Vicente Guaita;https://s.hs-data.com/bilder/spieler/gross/125471.jpg;base_url/resources/images/players-pict/premier-league/crystal-palace/vicente-guaita.webp;1987-01-10;Torrent, Spain;Spain;1.90;1;1;6;31;79
 Stephen Henderson;https://s.hs-data.com/bilder/spieler/gross/85580.jpg;base_url/resources/images/players-pict/premier-league/crystal-palace/stephen-henderson.webp;1988-05-02;Dublin, Republic of Ireland;Republic of Ireland;1.88;1;1;6;19;-
@@ -176,7 +175,7 @@ Jordan Ayew;https://s.hs-data.com/bilder/spieler/gross/158615.jpg;base_url/resou
 Michy Batshuayi;https://s.hs-data.com/bilder/spieler/gross/181000.jpg;base_url/resources/images/players-pict/premier-league/crystal-palace/michy-batshuayi.webp;1993-10-02;Brussels, Belgium;Belgium;1.85;18;18;6;23;69
 Christian Benteke;https://s.hs-data.com/bilder/spieler/gross/107544.jpg;base_url/resources/images/players-pict/premier-league/crystal-palace/christian-benteke.webp;1990-12-03;Kinshasa, Zaire;Belgium;1.90;18;18;6;20;71
 Connor Wickham;https://s.hs-data.com/bilder/spieler/gross/140375.jpg;base_url/resources/images/players-pict/premier-league/crystal-palace/connor-wickham.webp;1993-03-31;Hereford, England;England;1.91;18;18;6;21;59
-_-_-_
+
 Jonas Lössl;https://s.hs-data.com/bilder/spieler/gross/119757.jpg;base_url/resources/images/players-pict/premier-league/everton/jonas-lossl.webp;1989-02-01;Kolding, Denmark;Denmark;1.95;1;1;7;49;62
 João Virgínia;https://s.hs-data.com/bilder/spieler/gross/353082.jpg;base_url/resources/images/players-pict/premier-league/everton/joao-virginia.webp;1999-10-10;Faro, Portugal;Portugal;1.91;1;1;7;31;-
 Robin Olsen;https://s.hs-data.com/bilder/spieler/gross/125808.jpg;base_url/resources/images/players-pict/premier-league/everton/robin-olsen.webp;1990-01-08;Malmo, Sweden;Sweden;1.96;1;1;7;33;72
@@ -209,7 +208,7 @@ Richarlison;https://s.hs-data.com/bilder/spieler/gross/315439.jpg;base_url/resou
 Dominic Calvert-Lewin;https://s.hs-data.com/bilder/spieler/gross/263593.jpg;base_url/resources/images/players-pict/premier-league/everton/dominic-calvert-lewin.webp;1997-03-16;Sheffield, England;England;1.87;18;18;7;9;80
 Ellis Simms;https://s.hs-data.com/bilder/spieler/gross/419124.jpg;base_url/resources/images/players-pict/premier-league/everton/ellis-simms.webp;2001-05-01;Oldham, England;England;1.83;18;18;7;50;-
 Cenk Tosun;https://s.hs-data.com/bilder/spieler/gross/129178.jpg;base_url/resources/images/players-pict/premier-league/everton/cenk-tosun.webp;1991-06-07;Wetzlar, Germany;Turkey;1.83;18;18;7;14;65
-_-_-_
+
 Fabricio Agosto;https://s.hs-data.com/bilder/spieler/gross/103635.jpg;base_url/resources/images/players-pict/premier-league/fulham/fabricio-agosto.webp;1987-12-31;Las Palmas, Spain;Spain;1.84;1;1;8;31;52
 Alphonse Aréola;https://s.hs-data.com/bilder/spieler/gross/170588.jpg;base_url/resources/images/players-pict/premier-league/fulham/alphonse-areola.webp;1993-02-27;Paris, France;France;1.95;1;1;8;1;68
 Marek Rodák;https://s.hs-data.com/bilder/spieler/gross/255530.jpg;base_url/resources/images/players-pict/premier-league/fulham/marek-rodak.webp;1996-12-13;Košice, Slovakia;Slovakia;1.94;1;1;8;12;73
@@ -240,7 +239,7 @@ Bobby Decordova-Reid;https://s.hs-data.com/bilder/spieler/gross/185753.jpg;base_
 Ivan Cavaleiro;https://s.hs-data.com/bilder/spieler/gross/201241.jpg;base_url/resources/images/players-pict/premier-league/fulham/ivan-cavaleiro.webp;1993-10-18;Vila Franca de Xira, Portugal;Portugal;1.75;13;14;8;17;61
 Aboubakar Kamara;https://s.hs-data.com/bilder/spieler/gross/284633.jpg;base_url/resources/images/players-pict/premier-league/fulham/aboubakar-kamara.webp;1995-03-07;Gonesse, France;France;1.77;18;14;8;47;63
 Aleksandar Mitrović;https://s.hs-data.com/bilder/spieler/gross/201384.jpg;base_url/resources/images/players-pict/premier-league/fulham/aleksandar-mitrovic.webp;1994-09-16;Smederevo, Serbia;Serbia;1.89;18;18;8;9;74
-_-_-_
+
 Elia Caprile;https://i2-prod.leeds-live.co.uk/sport/leeds-united/article17838072.ece/ALTERNATES/s1200b/1_JS207801891.jpg;base_url/resources/images/players-pict/premier-league/leeds-united/elia-caprile.webp;2001-08-25;Verona, Italy;Italy;1.91;1;1;9;25;-
 Kiko Casilla;https://s.hs-data.com/bilder/spieler/gross/46510.jpg;base_url/resources/images/players-pict/premier-league/leeds-united/kiko-casilla.webp;1986-10-02;Alcover, Spain;Spain;1.90;1;1;9;13;60
 Illan Meslier;https://s.hs-data.com/bilder/spieler/gross/404318.jpg;base_url/resources/images/players-pict/premier-league/leeds-united/illan-meslier.webp;2000-03-02;Lorient, France;France;1.97;1;1;9;1;70
@@ -265,7 +264,7 @@ Jamie Shackleton;https://s.hs-data.com/bilder/spieler/gross/432131.jpg;base_url/
 Ian Carlo Poveda;https://s.hs-data.com/bilder/spieler/gross/370000.jpg;base_url/resources/images/players-pict/premier-league/leeds-united/ian-carlo-poveda.webp;2000-02-09;Southwark, England;England;1.65;11;12;9;7;-
 Patrick Bamford;https://s.hs-data.com/bilder/spieler/gross/204196.jpg;base_url/resources/images/players-pict/premier-league/leeds-united/patrick-bamford.webp;1993-09-05;Grantham, England;England;1.85;18;18;9;9;73
 Rodrigo Moreno;https://s.hs-data.com/bilder/spieler/gross/167988.jpg;base_url/resources/images/players-pict/premier-league/leeds-united/rodrigo-moreno.webp;1991-03-06;Rio de Janeiro, Brazil;Spain;1.84;18;12;9;20;73
-_-_-_
+
 Eldin Jakupovic;https://s.hs-data.com/bilder/spieler/gross/11070.jpg;base_url/resources/images/players-pict/premier-league/leicester-city/eldin-jakupovic.webp;1984-10-02;Prijedor, Bosnia and Herzegovina;Switzerland;1.91;1;1;10;35;56
 Kasper Schmeichel;https://s.hs-data.com/bilder/spieler/gross/24578.jpg;base_url/resources/images/players-pict/premier-league/leicester-city/kasper-schmeichel.webp;1986-11-05;Copenhagen, Denmark;Denmark;1.89;1;1;10;1;79
 Danny Ward;https://s.hs-data.com/bilder/spieler/gross/199617.jpg;base_url/resources/images/players-pict/premier-league/leicester-city/danny-ward.webp;1993-06-22;Wrexham, Wales;Wales;1.91;1;1;10;12;48
@@ -293,7 +292,7 @@ Ayoze Pérez;https://s.hs-data.com/bilder/spieler/gross/241838.jpg;base_url/reso
 Kelechi Iheanacho;https://s.hs-data.com/bilder/spieler/gross/256168.jpg;base_url/resources/images/players-pict/premier-league/leicester-city/kelechi-iheanacho.webp;1996-10-03;Imo, Nigeria;Nigeria;1.85;18;16;10;14;77
 Islam Slimani;https://s.hs-data.com/bilder/spieler/gross/157158.jpg;base_url/resources/images/players-pict/premier-league/leicester-city/islam-slimani.webp;1988-06-18;Algiers, Algeria;Algeria;1.88;18;18;10;13;69
 Jamie Vardy;https://s.hs-data.com/bilder/spieler/gross/201640.jpg;base_url/resources/images/players-pict/premier-league/leicester-city/jamie-vardy.webp;1987-01-11;Sheffield, England;England;1.79;18;18;10;9;85
-_-_-_
+
 Alisson Becker;https://s.hs-data.com/bilder/spieler/gross/248681.jpg;base_url/resources/images/players-pict/premier-league/liverpool/allison-becker.webp;1992-10-02;Novo Hamburgo, Brazil;Brazil;1.91;1;1;11;1;75
 Vitezslav Jaros;https://icdn.empireofthekop.com/wp-content/uploads/2019/01/Screen-Shot-2019-01-16-at-07.10.49.jpg;base_url/resources/images/players-pict/premier-league/liverpool/vitezslav-jaros.webp;2001-07-23;Příbram, Czech Republic;Czech Republic;1.87;1;1;11;56;-
 Caoimhin Kelleher;https://s.hs-data.com/bilder/spieler/gross/309937.jpg;base_url/resources/images/players-pict/premier-league/liverpool/caoimhin-kelleher.webp;1998-11-23;Cork, Republic of Ireland;Republic of Ireland;1.88;1;1;11;62;-
@@ -324,7 +323,7 @@ Divock Origi;https://s.hs-data.com/bilder/spieler/gross/227342.jpg;base_url/reso
 Roberto Firmino;https://s.hs-data.com/bilder/spieler/gross/178325.jpg;base_url/resources/images/players-pict/premier-league/liverpool/roberto-firmino.webp;1991-10-02;Maceió, Brazil;Brazil;1.81;16;16;11;9;78
 Takumi Minamino;https://s.hs-data.com/bilder/spieler/gross/189670.jpg;base_url/resources/images/players-pict/premier-league/liverpool/takumi-minamino.webp;1995-01-16;Izumisano, Japan;Japan;1.74;14;18;11;18;68
 Diogo Jota;https://s.hs-data.com/bilder/spieler/gross/280709.jpg;base_url/resources/images/players-pict/premier-league/liverpool/diogo-jota.webp;1996-12-04;Porto, Portugal;Portugal;1.78;13;18;11;20;88
-_-_-_
+
 Scott Carson;https://s.hs-data.com/bilder/spieler/gross/13265.jpg;base_url/resources/images/players-pict/premier-league/man-city/scott-carson.webp;1985-09-03;Whitehaven, England;England;1.90;1;1;12;33;44
 Ederson;https://s.hs-data.com/bilder/spieler/gross/218208.jpg;base_url/resources/images/players-pict/premier-league/man-city/ederson.webp;1993-08-17;Osasco, Brazil;Brazil;1.88;1;1;12;31;82
 Zack Steffen;https://s.hs-data.com/bilder/spieler/gross/240134.jpg;base_url/resources/images/players-pict/premier-league/man-city/zack-steffen.webp;1995-04-02;Coatesville, Pennsylvania, United States;United States;1.91;1;1;12;13;65
@@ -355,7 +354,7 @@ Raheem Sterling;https://s.hs-data.com/bilder/spieler/gross/180807.jpg;base_url/r
 Sergio Agüero;https://s.hs-data.com/bilder/spieler/gross/43370.jpg;base_url/resources/images/players-pict/premier-league/man-city/sergio-aguero.webp;1988-06-02;Buenos Aires, Argentina;Argentina;1.73;18;18;12;10;78
 Gabriel Jesus;https://s.hs-data.com/bilder/spieler/gross/307889.jpg;base_url/resources/images/players-pict/premier-league/man-city/gabriel-jesus.webp;1997-04-03;São Paulo, Brazil;Brazil;1.75;18;18;12;9;86
 Liam Delap;https://s.hs-data.com/bilder/spieler/gross/434896.jpg;base_url/resources/images/players-pict/premier-league/man-city/liam-delap.webp;2003-02-08;Winchester, England;England;1.85;18;18;12;48;-
-_-_-_
+
 David De Gea;https://s.hs-data.com/bilder/spieler/gross/148647.jpg;base_url/resources/images/players-pict/premier-league/man-united/david-de-gea.webp;1990-11-07;Madrid, Spain;Spain;1.92;1;1;13;1;79
 Lee Grant;https://s.hs-data.com/bilder/spieler/gross/29397.jpg;base_url/resources/images/players-pict/premier-league/man-united/lee-grant.webp;1983-01-27;Hemel Hempstead, England;England;1.93;1;1;13;13;56
 Dean Henderson;https://s.hs-data.com/bilder/spieler/gross/253988.jpg;base_url/resources/images/players-pict/premier-league/man-united/dean-henderson.webp;1997-03-12;Whitehaven, England;England;1.88;1;1;13;26;80
@@ -387,7 +386,7 @@ Mason Greenwood;https://s.hs-data.com/bilder/spieler/gross/408175.jpg;base_url/r
 Edinson Cavani;https://s.hs-data.com/bilder/spieler/gross/73627.jpg;base_url/resources/images/players-pict/premier-league/man-united/edinson-cavani.webp;1987-02-14;Salto, Uruguay;Uruguay;1.84;18;18;13;7;64
 Odion Ighalo;https://s.hs-data.com/bilder/spieler/gross/94964.jpg;base_url/resources/images/players-pict/premier-league/man-united/odion-ighalo.webp;1989-06-16;Lagos, Nigeria;Nigeria;1.81;18;18;13;25;59
 Anthony Martial;https://s.hs-data.com/bilder/spieler/gross/210882.jpg;base_url/resources/images/players-pict/premier-league/man-united/anthony-martial.webp;1995-12-05;Massy, France;France;1.81;18;18;13;9;83
-_-_-_
+
 Karl Darlow;https://s.hs-data.com/bilder/spieler/gross/170237.jpg;base_url/resources/images/players-pict/premier-league/newcastle/karl-darlow.webp;1990-10-08;Northampton, England;England;1.90;1;1;14;26;67
 Martin Dúbravka;https://s.hs-data.com/bilder/spieler/gross/80114.jpg;base_url/resources/images/players-pict/premier-league/newcastle/martin-dubravka.webp;1989-01-15;Žilina, Slovakia;Slovakia;1.90;1;1;14;1;77
 Mark Gillespie;https://s.hs-data.com/bilder/spieler/gross/165404.jpg;base_url/resources/images/players-pict/premier-league/newcastle/mark-gillespie.webp;1992-03-27;Newcastle upon Tyne, England;England;1.91;1;1;14;29;-
@@ -416,7 +415,7 @@ Dwight Gayle;https://s.hs-data.com/bilder/spieler/gross/217850.jpg;base_url/reso
 Joelinton;https://s.hs-data.com/bilder/spieler/gross/273960.jpg;base_url/resources/images/players-pict/premier-league/newcastle/joelinton.webp;1996-08-14;Aliança, Brazil;Brazil;1.86;18;16;14;9;68
 Andy Carroll;https://s.hs-data.com/bilder/spieler/gross/69795.jpg;base_url/resources/images/players-pict/premier-league/newcastle/andy-carroll.webp;1989-01-06;Gateshead, England;England;1.93;18;18;14;7;62
 Callum Wilson;https://s.hs-data.com/bilder/spieler/gross/156457.jpg;base_url/resources/images/players-pict/premier-league/newcastle/callum-wilson.webp;1992-02-27;Coventry, England;England;1.80;18;18;14;13;77
-_-_-_
+
 Wesley Foderingham;https://s.hs-data.com/bilder/spieler/gross/193935.jpg;base_url/resources/images/players-pict/premier-league/sheffield-united/wesley-foderingham.webp;1991-01-14;Hammersmith, England;England;1.85;1;1;15;18;-
 Simon Moore;https://s.hs-data.com/bilder/spieler/gross/165402.jpg;base_url/resources/images/players-pict/premier-league/sheffield-united/simon-moore.webp;1990-05-19;Sandown, England;England;1.92;1;1;15;25;-
 Aaron Ramsdale;https://s.hs-data.com/bilder/spieler/gross/353989.jpg;base_url/resources/images/players-pict/premier-league/sheffield-united/aaron-ramsdale.webp;1998-05-14;Stoke-on-Trent, England;England;1.88;1;1;15;1;75
@@ -444,7 +443,7 @@ Lys Mousset;https://s.hs-data.com/bilder/spieler/gross/264571.jpg;base_url/resou
 Rhian Brewster;https://s.hs-data.com/bilder/spieler/gross/369997.jpg;base_url/resources/images/players-pict/premier-league/sheffield-united/rhian-brewster.webp;2000-04-01;Chadwell Heath, England;England;1.80;18;18;15;24;67
 David McGoldrick;https://s.hs-data.com/bilder/spieler/gross/39753.jpg;base_url/resources/images/players-pict/premier-league/sheffield-united/david-mcgoldrick.webp;1987-11-29;Nottingham, England;Republic of Ireland;1.85;18;18;15;17;74
 Billy Sharp;https://s.hs-data.com/bilder/spieler/gross/42587.jpg;base_url/resources/images/players-pict/premier-league/sheffield-united/billy-sharp.webp;1986-02-05;Sheffield, England;England;1.75;18;18;15;10;68
-_-_-_
+
 Fraser Forster;https://s.hs-data.com/bilder/spieler/gross/46031.jpg;base_url/resources/images/players-pict/premier-league/southampton/fraser-forster.webp;1988-03-17;Hexham, England;England;2.01;1;1;16;44;59
 Harry Lewis;https://s.hs-data.com/bilder/spieler/gross/327320.jpg;base_url/resources/images/players-pict/premier-league/southampton/harry-lewis.webp;1997-12-20;Shrewsbury, England;England;1.91;1;1;16;41;-
 Alex McCarthy;https://s.hs-data.com/bilder/spieler/gross/121700.jpg;base_url/resources/images/players-pict/premier-league/southampton/alex-mccarthy.webp;1989-12-03;Guildford, England;England;1.93;1;1;16;1;81
@@ -471,7 +470,7 @@ Che Adams;https://s.hs-data.com/bilder/spieler/gross/290671.jpg;base_url/resourc
 Danny Ings;https://s.hs-data.com/bilder/spieler/gross/170285.jpg;base_url/resources/images/players-pict/premier-league/southampton/danny-ings.webp;1992-07-23;Winchester, England;England;1.78;18;18;16;9;88
 Shane Long;https://s.hs-data.com/bilder/spieler/gross/43075.jpg;base_url/resources/images/players-pict/premier-league/southampton/shane-long.webp;1987-01-22;Gortnahoe, Tipperary, Republic of Ireland;Republic of Ireland;1.80;18;18;16;7;68
 Michael Obafemi;https://s.hs-data.com/bilder/spieler/gross/385126.jpg;base_url/resources/images/players-pict/premier-league/southampton/michael-obafemi.webp;2000-07-06;Dublin, Republic of Ireland;Republic of Ireland;1.69;18;18;16;14;-
-_-_-_
+
 Brandon Austin;https://s.hs-data.com/bilder/spieler/gross/350641.jpg;base_url/resources/images/players-pict/premier-league/tottenham/brandon-austin.webp;1999-01-08;Hemel Hempstead, England;England;1.88;1;1;17;40;-
 Paulo Gazzaniga;https://s.hs-data.com/bilder/spieler/gross/194526.jpg;base_url/resources/images/players-pict/premier-league/tottenham/paulo-gazzaniga.webp;1992-01-02;Murphy, Argentina;Argentina;1.96;1;1;17;22;73
 Joe Hart;https://s.hs-data.com/bilder/spieler/gross/50309.jpg;base_url/resources/images/players-pict/premier-league/tottenham/joe-hart.webp;1987-04-19;Shrewsbury, England;England;1.96;1;1;17;12;59
@@ -504,7 +503,7 @@ Steven Bergwijn;https://s.hs-data.com/bilder/spieler/gross/268327.jpg;base_url/r
 Gareth Bale;https://s.hs-data.com/bilder/spieler/gross/60075.jpg;base_url/resources/images/players-pict/premier-league/tottenham/gareth-bale.webp;1989-07-16;Cardiff, Wales;Wales;1.85;14;14;17;9;69
 Carlos Vinícius;https://s.hs-data.com/bilder/spieler/gross/396760.jpg;base_url/resources/images/players-pict/premier-league/tottenham/carlos-vinicius.webp;1995-03-25;Bom Jesus das Selvas, Brazil;Brazil;1.90;18;18;17;45;67
 Harry Kane;https://s.hs-data.com/bilder/spieler/gross/179293.jpg;base_url/resources/images/players-pict/premier-league/tottenham/harry-kane.webp;1993-07-28;Walthamstow, England;England;1.88;18;18;17;10;97
-_-_-_
+
 Jonathan Bond;https://s.hs-data.com/bilder/spieler/gross/170221.jpg;base_url/resources/images/players-pict/premier-league/west-brom/jonathan-bond.webp;1993-05-19;Hemel Hempstead, England;England;1.93;1;1;18;23;-
 David Button;https://s.hs-data.com/bilder/spieler/gross/150448.jpg;base_url/resources/images/players-pict/premier-league/west-brom/david-button.webp;1989-02-27;Stevenage, England;England;1.91;1;1;18;25;50
 Sam Johnstone;https://s.hs-data.com/bilder/spieler/gross/194690.jpg;base_url/resources/images/players-pict/premier-league/west-brom/sam-johnstone.webp;1993-05-25;Preston, England;England;1.93;1;1;18;1;71
@@ -532,7 +531,7 @@ Karlan Ahearne-Grant;https://s.hs-data.com/bilder/spieler/gross/268360.jpg;base_
 Charlie Austin;https://s.hs-data.com/bilder/spieler/gross/156253.jpg;base_url/resources/images/players-pict/premier-league/west-brom/charlie-austin.webp;1989-07-05;Hungerford, Berkshire, England;England;1.88;18;18;18;15;60
 Callum Robinson;https://s.hs-data.com/bilder/spieler/gross/227848.jpg;base_url/resources/images/players-pict/premier-league/west-brom/callum-robinson.webp;1995-02-02;Northampton, England;Republic of Ireland;1.78;18;13;18;7;69
 Hal Robson-Kanu;https://s.hs-data.com/bilder/spieler/gross/121695.jpg;base_url/resources/images/players-pict/premier-league/west-brom/hal-robson-kanu.webp;1989-05-21;Acton, London, England;Wales;1.83;18;14;18;4;62
-_-_-_
+
 Łukasz Fabiański;https://s.hs-data.com/bilder/spieler/gross/27907.jpg;base_url/resources/images/players-pict/premier-league/west-ham/lukasz-fabianski.webp;1985-04-18;Kostrzyn nad Odrą, Poland;Poland;1.90;1;1;19;1;77
 David Martin;https://s.hs-data.com/bilder/spieler/gross/33485.jpg;base_url/resources/images/players-pict/premier-league/west-ham/david-martin.webp;1986-01-22;Romford, London, England;England;1.85;1;1;19;25;-
 Darren Randolph;https://s.hs-data.com/bilder/spieler/gross/40387.jpg;base_url/resources/images/players-pict/premier-league/west-ham/darren-randolph.webp;1987-05-12;Bray, Republic of Ireland;Republic of Ireland;1.88;1;1;19;35;67
@@ -558,7 +557,7 @@ Andriy Yarmolenko;https://s.hs-data.com/bilder/spieler/gross/114570.jpg;base_url
 Saïd Benrahma;https://miro.medium.com/max/720/1*bGLeuMJFHWfwFAE01d9gZA.jpeg;base_url/resources/images/players-pict/premier-league/west-ham/said-benrahma.webp;1995-08-10;Aïn Témouchent, Algeria;Algeria;1.72;13;13;19;9;73
 Michail Antonio;https://s.hs-data.com/bilder/spieler/gross/153053.jpg;base_url/resources/images/players-pict/premier-league/west-ham/michail-antonio.webp;1990-03-28;Wandsworth, England;England;1.80;18;11;19;30;87
 Sébastien Haller;https://s.hs-data.com/bilder/spieler/gross/189543.jpg;base_url/resources/images/players-pict/premier-league/west-ham/sebastian-haller.webp;1994-06-22;Ris Orangis, France;France;1.90;18;18;19;22;67
-_-_-_
+
 Rui Patrício;https://s.hs-data.com/bilder/spieler/gross/58120.jpg;base_url/resources/images/players-pict/premier-league/wolves/rui-patricio.webp;1988-02-15;Regueira de Pontes, Portugal;Portugal;1.90;1;1;20;11;85
 John Ruddy;https://s.hs-data.com/bilder/spieler/gross/37123.jpg;base_url/resources/images/players-pict/premier-league/wolves/john-ruddy.webp;1986-10-24;St Ives, England;England;1.93;1;1;20;21;50
 Nélson Semedo;https://s.hs-data.com/bilder/spieler/gross/231910.jpg;base_url/resources/images/players-pict/premier-league/wolves/nelson-semedo.webp;1993-11-16;Lisbon, Portugal;Portugal;1.77;4;4;20;22;81

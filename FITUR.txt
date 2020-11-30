@@ -51,7 +51,7 @@ SEASONS
 -> created_at TIMESTAMP NOT NULL
 -> last_modified TIMESTAMP NOT NULL
 
-*TEAMS
+TEAMS
 -> id INT UNSIGNED NOT NULL (PRIMARY KEY)
 -> name VARCHAR(100) NOT NULL
 -> logo_url VARCHAR(100)
@@ -96,7 +96,7 @@ SEASONS
 -> created_at TIMESTAMP NOT NULL
 -> last_modified TIMESTAMP NOT NULL
 
-*PLAYERS
+PLAYERS
 -> id INT UNSIGNED NOT NULL (PRIMARY KEY)
 -> name VARCHAR(100) NOT NULL
 -> image_url VARCHAR(100)
@@ -169,14 +169,14 @@ POSITIONS_CLASS
 -> created_at TIMESTAMP NOT NULL
 -> last_modified TIMESTAMP NOT NULL
 
-*COACHES
+COACHES
 -> id INT UNSIGNED NOT NULL (PRIMARY KEY)
 -> name VARCHAR(100) NOT NULL
 -> date_of_birth DATE
 -> place_of_birth VARCHAR(100)
--> team_id INT UNSIGNED NOT NULL (FOREIGN KEY REFERENCES -> TEAMS(id))
--> nationality VARCHAR(100)
 -> age TINYINT UNSIGNED
+-> nationality VARCHAR(100)
+-> team_id INT UNSIGNED NOT NULL (FOREIGN KEY REFERENCES -> TEAMS(id))
 -> created_at TIMESTAMP NOT NULL
 -> last_modified TIMESTAMP NOT NULL
 
@@ -265,7 +265,7 @@ GET /api/kickoff/team/:id/squads
 -> SELECT * FROM coaches WHERE team_id=[id]
 -> SELECT * FROM positions_class -> Get position_class_id
 -> SELECT * FROM positions WHERE position_class_id=[position_class_id] -> Get position_id 
--> SELECT * FROM players WHERE team_id=[id] AND prefer_position_id IN [positi ns_id]
+-> SELECT * FROM players WHERE team_id=[id] AND prefer_position_id IN [positions_id]
 
 GET /api/kickoff/team/:id/last-match?match
 -> SELECT * FROM matches WHERE home_team_id=[id] OR away_team_id=[id] AND time_date<=NOW() ORDER BY time_date DESC LIMIT [match]
@@ -338,13 +338,11 @@ Menambah kolom nickname pada tabel teams (untuk menampung nama pendek dari tim)
 -15/11/2020
 
 Changes on Future:
-Rencana menghapus kolom age pada tabel players (perhitungan umur akan dilakukan saat fetching API) - CLOSE
 https://www.w3resource.com/javascript-exercises/javascript-date-exercise-18.php
 Mengganti kolom image_url menjadi image_url_fr_internet pada tabel coaches dan players (menampung link dari internet) - CLOSE
 Mengganti kolom logo_url menjadi logo_url_fr_internet pada tabel teams (menampung link dari internet) - CLOSE
 Menambah kolom image_url_fr_server pada tabel coaches dan players (menampung link yang disediakan server) - CLOSE
 Menambah kolom logo_url_fr_server pada tabel teams (menampung link yang disediakan server) - CLOSE
-Menghapus kolom age pada tabel coaches (perhitungan umur akan dilakukan saat fetching API) - CLOSE
 Menambah kolom appointed (menampung tanggal awal mula kontrak pelatih) dan kolom contract_until (menampung tanggal berakhir kontrak pelatih) pada tabel coaches - CLOSE
 Menambah kolom fullname (menampung nama lengkap pelatih) pada tabel coaches - OPEN
 
