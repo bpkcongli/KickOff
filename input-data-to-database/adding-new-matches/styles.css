@@ -11,6 +11,20 @@
     padding: 10px 15px;
 }
 
+.card-header-flex {
+    display: flex;
+}
+
+.card-header-text, .card-header-submit {
+    flex-basis: 50%;
+}
+
+.card-header-submit button {
+    float: right;
+    margin-right: 20px;
+    margin-top: 3px;
+}
+
 .card-header .btn-link {
     text-decoration: none;
 }
@@ -23,7 +37,7 @@
     margin-bottom: 20px;
 }
 
-.match-info-input, .match-info-input-lst, .stats, .goals-info {
+.match-info-input, .match-info-input-lst, .stats, #goalsInfo {
     display: flex;
 }
 
@@ -36,7 +50,7 @@
     margin-right: 10px;
 }
 
-#homeTeam, #awayTeam, #scoreHomeTeam, #scoreAwayTeam, .goals-info-home, .goals-info-away {
+#homeTeam, #awayTeam, #scoreHomeTeam, #scoreAwayTeam, #goalsInfoHome, #goalsInfoAway {
     flex-basis: 50%;
 }
 
@@ -48,7 +62,7 @@
     float: right;
 }
 
-#awayTeamInput:focus, #scoreAwayTeamInput:focus, .stats-input-box-at:focus {
+#awayTeamInput:focus, #scoreAwayTeamInput:focus, .stats-input-away input:focus, #goalsInfoAway input:focus {
     border-color: rgba(220, 53, 69, 0.8);
     box-shadow: 0 0 0 3px rgba(220, 53, 69, 0.4);
     outline: 0 none;
@@ -95,7 +109,7 @@
     margin-bottom: 20px;
 }
 
-.home-stats-header, .away-stats-header, .stats-input {
+.home-stats-header, .away-stats-header, .stats-input-home, .stats-input-away {
     flex-basis: 30%;
 }
 
@@ -108,7 +122,7 @@
     padding: 8px 0;
 }
 
-.goals-info-home {
+#goalsInfoHome {
     margin-right: 10px;
 }
 

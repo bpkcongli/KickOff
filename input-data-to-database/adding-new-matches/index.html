@@ -14,9 +14,16 @@
                 <div id="accordion">
                     <div class="card custom-card">
                         <div class="card-header" id="matchInfoHeader">
-                            <h4 class="mb-0">
-                                <button class="btn btn-link" data-toggle="collapse" data-target="#matchInfoBody" aria-expanded="true" aria-controls="matchInfoBody">Match Information</button>
-                            </h4>
+                            <div class="card-header-flex">
+                                <div class="card-header-text">
+                                    <h4 class="mb-0">
+                                        <button class="btn btn-link" data-toggle="collapse" data-target="#matchInfoBody" aria-expanded="true" aria-controls="matchInfoBody">Match Information</button>
+                                    </h4>
+                                </div>
+                                <div class="card-header-submit">
+                                    <button type="button" class="btn btn-outline-success btn-sm">Finished</button>
+                                </div>
+                            </div>
                         </div>
                         <div id="matchInfoBody" class="collapse show" aria-labelledby="matchInfoHeader" data-parent="#accordion">
                             <div class="card-body text-center">
@@ -87,12 +94,19 @@
                         </div>
                     </div>
                     <div class="card custom-card">
-                        <div class="card-header" id="match-statistics-header">
-                            <h4 class="mb-0">
-                                <button class="btn btn-link" data-toggle="collapse" data-target="#match-statistics-body" aria-expanded="true" aria-controls="match-statistics-body">Match Statistics</button>
-                            </h4>
+                        <div class="card-header" id="matchStatisticsHeader">
+                            <div class="card-header-flex">
+                                <div class="card-header-text">
+                                    <h4 class="mb-0">
+                                        <button class="btn btn-link" data-toggle="collapse" data-target="#matchStatisticsBody" aria-expanded="true" aria-controls="matchStatisticsBody">Match Statistics</button>
+                                    </h4>
+                                </div>
+                                <div class="card-header-submit">
+                                    <button type="button" class="btn btn-outline-success btn-sm">Finished</button>
+                                </div>
+                            </div>
                         </div>
-                        <div id="match-statistics-body" class="collapse" aria-labelledby="match-statistics-header" data-parent="#accordion">
+                        <div id="matchStatisticsBody" class="collapse" aria-labelledby="matchStatisticsHeader" data-parent="#accordion">
                             <div class="card-body">
                                 <div class="stats">
                                     <div class="home-stats-header">
@@ -106,7 +120,7 @@
                                     </div>
                                 </div>   
                                 <div class="stats">
-                                    <div class="stats-input">
+                                    <div class="stats-input-home">
                                         <div class="input-group">
                                             <input class="form-control border-primary" type="text" placeholder="Shots HT">
                                         </div>
@@ -114,14 +128,14 @@
                                     <div class="stat-categories-header">
                                         <span>SHOTS</span>
                                     </div>
-                                    <div class="stats-input">
+                                    <div class="stats-input-away">
                                         <div class="input-group">
                                             <input class="form-control border-danger text-right" type="text" placeholder="Shots AT">
                                         </div>
                                     </div>
                                 </div>
                                 <div class="stats">
-                                    <div class="stats-input">
+                                    <div class="stats-input-home">
                                         <div class="input-group">
                                             <input class="form-control border-primary" type="text" placeholder="Shots On Target HT">
                                         </div>
@@ -129,14 +143,14 @@
                                     <div class="stat-categories-header">
                                         <span>SHOTS ON TARGET</span>
                                     </div>
-                                    <div class="stats-input">
+                                    <div class="stats-input-away">
                                         <div class="input-group">
                                             <input class="form-control border-danger text-right" type="text" placeholder="Shots On Target AT">
                                         </div>
                                     </div>
                                 </div>
                                 <div class="stats">
-                                    <div class="stats-input">
+                                    <div class="stats-input-home">
                                         <div class="input-group">
                                             <input class="form-control border-primary" type="text" placeholder="Possession HT">
                                         </div>
@@ -144,14 +158,14 @@
                                     <div class="stat-categories-header">
                                         <span>POSSESSION</span>
                                     </div>
-                                    <div class="stats-input">
+                                    <div class="stats-input-away">
                                         <div class="input-group">
                                             <input class="form-control border-danger text-right" type="text" placeholder="Possession AT">
                                         </div>
                                     </div>
                                 </div>
                                 <div class="stats">
-                                    <div class="stats-input">
+                                    <div class="stats-input-home">
                                         <div class="input-group">
                                             <input class="form-control border-primary" type="text" placeholder="Passes HT">
                                         </div>
@@ -159,14 +173,14 @@
                                     <div class="stat-categories-header">
                                         <span>PASSES</span>
                                     </div>
-                                    <div class="stats-input">
+                                    <div class="stats-input-away">
                                         <div class="input-group">
                                             <input class="form-control border-danger text-right" type="text" placeholder="Passes AT">
                                         </div>
                                     </div>
                                 </div>
                                 <div class="stats">
-                                    <div class="stats-input">
+                                    <div class="stats-input-home">
                                         <div class="input-group">
                                             <input class="form-control border-primary" type="text" placeholder="Pass Accuracy HT">
                                         </div>
@@ -174,14 +188,14 @@
                                     <div class="stat-categories-header">
                                         <span>PASS ACCURACY</span>
                                     </div>
-                                    <div class="stats-input">
+                                    <div class="stats-input-away">
                                         <div class="input-group">
                                             <input class="form-control border-danger text-right" type="text" placeholder="Pass Accuracy AT">
                                         </div>
                                     </div>
                                 </div>
                                 <div class="stats">
-                                    <div class="stats-input">
+                                    <div class="stats-input-home">
                                         <div class="input-group">
                                             <input class="form-control border-primary" type="text" placeholder="Fouls HT">
                                         </div>
@@ -189,14 +203,14 @@
                                     <div class="stat-categories-header">
                                         <span>FOULS</span>
                                     </div>
-                                    <div class="stats-input">
+                                    <div class="stats-input-away">
                                         <div class="input-group">
                                             <input class="form-control border-danger text-right" type="text" placeholder="Fouls AT">
                                         </div>
                                     </div>
                                 </div>
                                 <div class="stats">
-                                    <div class="stats-input">
+                                    <div class="stats-input-home">
                                         <div class="input-group">
                                             <input class="form-control border-primary" type="text" placeholder="Yellow Cards HT">
                                         </div>
@@ -204,14 +218,14 @@
                                     <div class="stat-categories-header">
                                         <span>YELLOW CARDS</span>
                                     </div>
-                                    <div class="stats-input">
+                                    <div class="stats-input-away">
                                         <div class="input-group">
                                             <input class="form-control border-danger text-right" type="text" placeholder="Yellow Cards AT">
                                         </div>
                                     </div>
                                 </div>
                                 <div class="stats">
-                                    <div class="stats-input">
+                                    <div class="stats-input-home">
                                         <div class="input-group">
                                             <input class="form-control border-primary" type="text" placeholder="Red Cards HT">
                                         </div>
@@ -219,14 +233,14 @@
                                     <div class="stat-categories-header">
                                         <span>RED CARDS</span>
                                     </div>
-                                    <div class="stats-input">
+                                    <div class="stats-input-away">
                                         <div class="input-group">
                                             <input class="form-control border-danger text-right" type="text" placeholder="Red Cards AT">
                                         </div>
                                     </div>
                                 </div>
                                 <div class="stats">
-                                    <div class="stats-input">
+                                    <div class="stats-input-home">
                                         <div class="input-group">
                                             <input class="form-control border-primary" type="text" placeholder="Offsides HT">
                                         </div>
@@ -234,14 +248,14 @@
                                     <div class="stat-categories-header">
                                         <span>OFFSIDES</span>
                                     </div>
-                                    <div class="stats-input">
+                                    <div class="stats-input-away">
                                         <div class="input-group">
                                             <input class="form-control border-danger text-right" type="text" placeholder="Offsides AT">
                                         </div>
                                     </div>
                                 </div>
                                 <div class="stats">
-                                    <div class="stats-input">
+                                    <div class="stats-input-home">
                                         <div class="input-group">
                                             <input class="form-control border-primary" type="text" placeholder="Corners HT">
                                         </div>
@@ -249,7 +263,7 @@
                                     <div class="stat-categories-header">
                                         <span>CORNERS</span>
                                     </div>
-                                    <div class="stats-input">
+                                    <div class="stats-input-away">
                                         <div class="input-group">
                                             <input class="form-control border-danger text-right" type="text" placeholder="Corners AT">
                                         </div>
@@ -259,15 +273,22 @@
                         </div>
                     </div>
                     <div class="card custom-card">
-                        <div class="card-header" id="goals-info-header">
-                            <h4 class="mb-0">
-                                <button class="btn btn-link" data-toggle="collapse" data-target="#goals-info-body" aria-expanded="true" aria-controls="goals-info-body">Goals Information</button>
-                            </h4>
+                        <div class="card-header" id="goalsInfoHeader">
+                            <div class="card-header-flex">
+                                <div class="card-header-text">
+                                    <h4 class="mb-0">
+                                        <button class="btn btn-link" data-toggle="collapse" data-target="#goalsInfoBody" aria-expanded="true" aria-controls="goalsInfoBody">Goals Information</button>
+                                    </h4>
+                                </div>
+                                <div class="card-header-submit">
+                                    <button type="button" class="btn btn-outline-success btn-sm">Finished</button>
+                                </div>
+                            </div>
                         </div>
-                        <div id="goals-info-body" class="collapse" aria-labelledby="goals-info-header" data-parent="#accordion">
+                        <div id="goalsInfoBody" class="collapse" aria-labelledby="goalsInfoHeader" data-parent="#accordion">
                             <div class="card-body text-center">
-                                <div class="goals-info">
-                                    <div class="goals-info-home text-left">
+                                <div id="goalsInfo">
+                                    <div class="text-left" id="goalsInfoHome">
                                         <h5>HOME</h5>
                                         <div class="input-group">
                                             <input type="text" class="form-control border-primary" placeholder="Player Name HT">
@@ -285,7 +306,7 @@
                                         <div class="min-pen-og-con text-left">
                                             <div class="minutes">
                                                 <div class="input-group">
-                                                    <input class="form-control" type="text" placeholder="Match Date">
+                                                    <input class="form-control border-primary" type="text" placeholder="Match Date">
                                                 </div>
                                             </div>
                                             <div class="penalty">
@@ -302,7 +323,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="goals-info-away text-right">
+                                    <div class="text-right" id="goalsInfoAway">
                                         <h5>AWAY</h5>
                                         <div class="input-container">
                                             <div class="input-group">
@@ -322,7 +343,7 @@
                                        <div class="min-pen-og-con text-left">
                                             <div class="minutes">
                                                 <div class="input-group">
-                                                    <input class="form-control" type="text" placeholder="Match Date">
+                                                    <input class="form-control border-danger" type="text" placeholder="Match Date">
                                                 </div>
                                             </div>
                                             <div class="penalty">
@@ -344,36 +365,57 @@
                         </div>
                     </div>
                     <div class="card custom-card">
-                        <div class="card-header" id="assists-info-header">
-                            <h4 class="mb-0">
-                                <button class="btn btn-link" data-toggle="collapse" data-target="#assists-info-body" aria-expanded="true" aria-controls="assists-info-body">Assists Information</button>
-                            </h4>
+                        <div class="card-header" id="assistsInfoHeader">
+                            <div class="card-header-flex">
+                                <div class="card-header-text">
+                                    <h4 class="mb-0">
+                                        <button class="btn btn-link" data-toggle="collapse" data-target="#assistsInfoBody" aria-expanded="true" aria-controls="assistsInfoBody">Assists Information</button>
+                                    </h4>
+                                </div>
+                                <div class="card-header-submit">
+                                    <button type="button" class="btn btn-outline-success btn-sm">Finished</button>
+                                </div>
+                            </div>
                         </div>
-                        <div id="assists-info-body" class="collapse" aria-labelledby="assists-info-header" data-parent="#accordion">
+                        <div id="assistsInfoBody" class="collapse" aria-labelledby="assistsInfoHeader" data-parent="#accordion">
                             <div class="card-body text-center">
                                 Ini adalah halaman Assists Information.
                             </div>
                         </div>
                     </div>
                     <div class="card custom-card">
-                        <div class="card-header" id="yellow-cards-info-header">
-                            <h4 class="mb-0">
-                                <button class="btn btn-link" data-toggle="collapse" data-target="#yellow-cards-info-body" aria-expanded="true" aria-controls="yellow-cards-info-body">Yellow Cards Information</button>
-                            </h4>
+                        <div class="card-header" id="yellowCardsInfoHeader">
+                            <div class="card-header-flex">
+                                <div class="card-header-text">
+                                    <h4 class="mb-0">
+                                        <button class="btn btn-link" data-toggle="collapse" data-target="#yellowCardsInfoBody" aria-expanded="true" aria-controls="yellowCardsInfoBody">Yellow Cards Information</button>
+                                    </h4>
+                                </div>
+                                <div class="card-header-submit">
+                                    <button type="button" class="btn btn-outline-success btn-sm">Finished</button>
+                                </div>
+                            </div>
                         </div>
-                        <div id="yellow-cards-info-body" class="collapse" aria-labelledby="yellow-cards-info-header" data-parent="#accordion">
+                        <div id="yellowCardsInfoBody" class="collapse" aria-labelledby="yellowCardsInfoHeader" data-parent="#accordion">
                             <div class="card-body text-center">
                                 Ini adalah halaman Yellow Cards Information.
                             </div>
                         </div>
                     </div>
                     <div class="card custom-card">
-                        <div class="card-header" id="red-cards-info-header">
-                            <h4 class="mb-0">
-                                <button class="btn btn-link" data-toggle="collapse" data-target="#red-cards-info-body" aria-expanded="true" aria-controls="red-cards-info-body">Red Cards Information</button>
-                            </h4>
+                        <div class="card-header" id="redCardsInfoHeader">
+                            <div class="card-header-flex">
+                                <div class="card-header-text">
+                                    <h4 class="mb-0">
+                                        <button class="btn btn-link" data-toggle="collapse" data-target="#redCardsInfoBody" aria-expanded="true" aria-controls="redCardsInfoBody">Red Cards Information</button>
+                                    </h4>
+                                </div>
+                                <div class="card-header-submit">
+                                    <button type="button" class="btn btn-outline-success btn-sm">Finished</button>
+                                </div>
+                            </div>
                         </div>
-                        <div id="red-cards-info-body" class="collapse" aria-labelledby="red-cards-info-header" data-parent="#accordion">
+                        <div id="redCardsInfoBody" class="collapse" aria-labelledby="redCardsInfoHeader" data-parent="#accordion">
                             <div class="card-body text-center">
                                 Ini adalah halaman Red Cards Information.
                             </div>
