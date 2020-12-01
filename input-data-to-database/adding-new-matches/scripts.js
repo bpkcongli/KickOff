@@ -12,18 +12,20 @@ const searchHomeTeam = () => {
     searchTeams(homeTeamInput).then(result => {
         const autoCompleteHomeTeam = document.querySelector("#homeTeam .autocomplete-holder");
         autoCompleteHomeTeam.innerHTML = displayAutoCompleteTeams(result);
-        autoCompleteHomeTeam.querySelector(".autocomplete").style.display = "block";
-        if (autoCompleteHomeTeam.querySelector(".autocomplete").clientHeight > 200) {
-            autoCompleteHomeTeam.querySelector(".autocomplete").style.height = "200px";
-            autoCompleteHomeTeam.querySelector(".autocomplete").style.overflow = "scroll";
-        }
-        autoCompleteHomeTeam.querySelectorAll(".autocomplete-li").forEach(elem => {
-            elem.addEventListener("click", () => {
-                const teamChoice = elem.innerText;
-                document.querySelector("#homeTeamInput").value = teamChoice;
-                autoCompleteHomeTeam.querySelector(".autocomplete").style.display = "none";
+        if (autoCompleteHomeTeam.querySelector(".autocomplete") !== null) {
+            autoCompleteHomeTeam.querySelector(".autocomplete").style.display = "block";
+            if (autoCompleteHomeTeam.querySelector(".autocomplete").clientHeight > 200) {
+                autoCompleteHomeTeam.querySelector(".autocomplete").style.height = "200px";
+                autoCompleteHomeTeam.querySelector(".autocomplete").style.overflow = "scroll";
+            }
+            autoCompleteHomeTeam.querySelectorAll(".autocomplete-li").forEach(elem => {
+                elem.addEventListener("click", () => {
+                    const teamChoice = elem.innerText;
+                    document.querySelector("#homeTeamInput").value = teamChoice;
+                    autoCompleteHomeTeam.querySelector(".autocomplete").style.display = "none";
+                });
             });
-        });
+        }
     });
 };
 homeTeamInputBtn.addEventListener("click", searchHomeTeam);
@@ -38,18 +40,20 @@ const searchAwayTeam = () => {
     searchTeams(awayTeamInput).then(result => {
         const autoCompleteAwayTeam = document.querySelector("#awayTeam .autocomplete-holder");
         autoCompleteAwayTeam.innerHTML = displayAutoCompleteTeams(result);
-        autoCompleteAwayTeam.querySelector(".autocomplete").style.display = "block";
-        if (autoCompleteAwayTeam.querySelector(".autocomplete").clientHeight > 200) {
-            autoCompleteAwayTeam.querySelector(".autocomplete").style.height = "200px";
-            autoCompleteAwayTeam.querySelector(".autocomplete").style.overflow = "scroll";
+        if (autoCompleteAwayTeam.querySelector(".autocomplete") !== null) {
+            autoCompleteAwayTeam.querySelector(".autocomplete").style.display = "block";
+            if (autoCompleteAwayTeam.querySelector(".autocomplete").clientHeight > 200) {
+                autoCompleteAwayTeam.querySelector(".autocomplete").style.height = "200px";
+                autoCompleteAwayTeam.querySelector(".autocomplete").style.overflow = "scroll";
+            }
+            autoCompleteAwayTeam.querySelectorAll(".autocomplete-li").forEach(elem => {
+                elem.addEventListener("click", () => {
+                    const teamChoice = elem.innerText;
+                    document.querySelector("#awayTeamInput").value = teamChoice;
+                    autoCompleteAwayTeam.querySelector(".autocomplete").style.display = "none";
+                });
+            }); 
         }
-        autoCompleteAwayTeam.querySelectorAll(".autocomplete-li").forEach(elem => {
-            elem.addEventListener("click", () => {
-                const teamChoice = elem.innerText;
-                document.querySelector("#awayTeamInput").value = teamChoice;
-                autoCompleteAwayTeam.querySelector(".autocomplete").style.display = "none";
-            });
-        });
     });
 };
 awayTeamInputBtn.addEventListener("click", searchAwayTeam);
@@ -74,9 +78,25 @@ const searchTeams = async teamName => {
 };
 
 const displayAutoCompleteTeams = teams => {
-    let result = `<div class="autocomplete text-left">`;
-    teams.forEach(team => {
-        result += `<li class="autocomplete-li">${team}</li>`;
-    })
-    return result + `</div>`;
+    let result = ``;
+    if (teams.length > 0) {
+        result += `<div class="autocomplete text-left">`;
+        teams.forEach(team => {
+            result += `<li class="autocomplete-li">${team}</li>`;
+        })
+        result += `</div>`;
+    }
+    return result;
 };
+
+document.querySelectorAll(".card-header-flex").forEach(elem => {
+    elem.querySelector(".card-header-text button").addEventListener("click", event => {
+        elem.querySelector(".card-header-submit button").disabled = !elem.querySelector(".card-header-submit button").disabled;
+    });
+});
+
+const validateInput = () => {};
+
+document.querySelectorAll(".card-header-submit button").forEach(elem => {
+    elem.addEventListener("click", validateInput)
+});
