@@ -36,7 +36,7 @@
     margin-right: 10px;
 }
 
-#homeTeam, #awayTeam, .score-home-team, .score-away-team, .goals-info-home, .goals-info-away {
+#homeTeam, #awayTeam, #scoreHomeTeam, #scoreAwayTeam, .goals-info-home, .goals-info-away {
     flex-basis: 50%;
 }
 
@@ -44,7 +44,11 @@
     margin-right: 10px;
 }
 
-#awayTeamInput:focus, #score-away-team-input:focus, .stats-input-box-at:focus {
+#scoreHomeTeam .input-group {
+    float: right;
+}
+
+#awayTeamInput:focus, #scoreAwayTeamInput:focus, .stats-input-box-at:focus {
     border-color: rgba(220, 53, 69, 0.8);
     box-shadow: 0 0 0 3px rgba(220, 53, 69, 0.4);
     outline: 0 none;
@@ -79,7 +83,7 @@
     background-color: #ccc;
 }
 
-.score-home-team {
+#scoreHomeTeam {
     margin-right: 10px;
 }
 
