@@ -21,75 +21,101 @@
                                     </h4>
                                 </div>
                                 <div class="card-header-submit">
-                                    <button type="button" class="btn btn-outline-success btn-sm">Finished</button>
+                                    <button type="button" class="btn btn-outline-success btn-sm" id="matchInformationValidateBtn">Finished</button>
                                 </div>
                             </div>
                         </div>
                         <div id="matchInfoBody" class="collapse show" aria-labelledby="matchInfoHeader" data-parent="#accordion">
                             <div class="card-body text-center">
-                            <div id="compDateStatCon">
+                                <div class="inline-container">
+                                    <div class="match-info-input">
+                                        <div id="matchSeason">
+                                            <div class="input-group">
+                                                <select class="custom-select" id="matchSeasonInput" required>
+                                                    <option value="null" disabled selected hidden>Season</option>
+                                                    <option value="1">EPL 2020/21</option>
+                                                    <option value="2">Serie A 2020/21</option>
+                                                    <option value="3">La Liga 2020/21</option>
+                                                    <option value="4">Bundesliga 2020/21</option>
+                                                    <option value="5">Ligue 1 2020/21</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div id="matchStatus">
+                                            <div class="input-group">
+                                                <select class="custom-select" id="matchStatusInput" required>
+                                                    <option value="null" disabled selected hidden>Status</option>
+                                                    <option value="1">SCHEDULED</option>
+                                                    <option value="2">FINISHED</option>
+                                                    <option value="3">POSTPONED</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="inline-container">
+                                    <div class="match-info-input">
+                                        <div id="matchDate">
+                                            <div class="input-group">
+                                                <input class="form-control text-center" type="text" id="matchDateInput" placeholder="Date (01/01/2020)">
+                                            </div>
+                                        </div>
+                                        <div id="matchday">
+                                            <div class="input-group">
+                                                <input class="form-control text-center" type="text" id="matchdayInput" placeholder="Matchday">
+                                            </div>
+                                        </div>
+                                        <div id="matchStadium">
+                                            <div class="input-group">
+                                                <input class="form-control text-center" type="text" id="matchStadiumInput" placeholder="Stadium">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                                 <div class="match-info-input">
-                                    <div id="matchCompetition">
+                                    <div id="homeTeam">
                                         <div class="input-group">
-                                            <select class="custom-select" id="matchCompetitionInput" required>
-                                                <option value="null" disabled selected hidden>Competition</option>
-                                                <option value="1">Premier League</option>
-                                                <option value="2">Serie A</option>
-                                                <option value="3">La Liga</option>
-                                                <option value="4">Bundesliga</option>
-                                                <option value="5">Ligue 1</option>
-                                            </select>
+                                            <input type="text" class="form-control border-primary" id="homeTeamInput" placeholder="Home Team">
+                                            <div class="input-group-append">
+                                                <button class="btn btn-outline-primary" type="button" id="homeTeamInputBtn">Search</button>
+                                            </div>
                                         </div>
+                                        <div class="autocomplete-holder"></div>
                                     </div>
-                                    <div id="matchDate">
+                                    <div id="awayTeam">
                                         <div class="input-group">
-                                            <input class="form-control text-center" type="text" id="matchDateInput" placeholder="Match Date">
+                                            <div class="input-group-prepend">
+                                                <button class="btn btn-outline-danger" type="button" id="awayTeamInputBtn">Search</button>
+                                            </div>
+                                            <input type="text" class="form-control border-danger text-right" id="awayTeamInput" placeholder="Away Team">
+                                        </div>
+                                        <div class="autocomplete-holder"></div>
+                                    </div>
+                                </div>
+                                <div class="match-info-input">
+                                    <div class="score-home-team">
+                                        <div class="input-group half-width">
+                                            <input class="form-control border-primary" type="text" id="scoreHTHomeTeamInput" placeholder="Score Half Time HT">
                                         </div>
                                     </div>
-                                    <div id="matchStatus">
-                                        <div class="input-group">
-                                            <select class="custom-select" id="matchStatusInput" required>
-                                                <option value="null" disabled selected hidden>Status</option>
-                                                <option value="1">SCHEDULED</option>
-                                                <option value="2">FINISHED</option>
-                                                <option value="3">POSTPONED</option>
-                                            </select>
+                                    <div class="score-away-team">
+                                        <div class="input-group half-width">
+                                            <input class="form-control text-right border-danger" type="text" id="scoreHTAwayTeamInput" placeholder="Score Half Time AT">
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="match-info-input">
-                                <div id="homeTeam">
-                                    <div class="input-group">
-                                        <input type="text" class="form-control border-primary" id="homeTeamInput" placeholder="Home Team">
-                                        <div class="input-group-append">
-                                            <button class="btn btn-outline-primary" type="button" id="homeTeamInputBtn">Search</button>
+                                <div class="match-info-input mb-0">
+                                    <div class="score-home-team">
+                                        <div class="input-group half-width">
+                                            <input class="form-control border-primary" type="text" id="scoreFTHomeTeamInput" placeholder="Score Full Time HT">
                                         </div>
                                     </div>
-                                    <div class="autocomplete-holder"></div>
-                                </div>
-                                <div id="awayTeam">
-                                    <div class="input-group">
-                                        <div class="input-group-prepend">
-                                            <button class="btn btn-outline-danger" type="button" id="awayTeamInputBtn">Search</button>
+                                    <div class="score-away-team">
+                                        <div class="input-group half-width">
+                                            <input class="form-control text-right border-danger" type="text" id="scoreFTAwayTeamInput" placeholder="Score Full Time AT">
                                         </div>
-                                        <input type="text" class="form-control border-danger text-right" id="awayTeamInput" placeholder="Away Team">
-                                    </div>
-                                    <div class="autocomplete-holder"></div>
-                                </div>
-                            </div>
-                            <div class="match-info-input-lst">
-                                <div id="scoreHomeTeam">
-                                    <div class="input-group half-width">
-                                        <input class="form-control border-primary" type="text" id="scoreHomeTeamInput" placeholder="Score HT">
                                     </div>
                                 </div>
-                                <div id="scoreAwayTeam">
-                                    <div class="input-group half-width">
-                                        <input class="form-control text-right border-danger" type="text" id="scoreAwayTeamInput" placeholder="Score AT">
-                                    </div>
-                                </div>
-                            </div>
                             </div>
                         </div>
                     </div>

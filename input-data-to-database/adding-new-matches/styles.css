@@ -29,28 +29,33 @@
     text-decoration: none;
 }
 
-#compDateStatCon {
+.inline-container {
     display: inline-block;
 }
 
 .match-info-input {
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
-.match-info-input, .match-info-input-lst, .stats, #goalsInfo {
+.match-info-input, .stats, #goalsInfo {
     display: flex;
 }
 
-#matchCompetition, #matchDate, #matchStatus {
+#matchSeason, #matchStatus {
+    flex-basis: 50%;
+    font-size: 0.8rem;
+}
+
+#matchDate, #matchday, #matchStadium {
     flex-basis: 33.33%;
     font-size: 0.8rem;
 }
 
-#matchCompetition, #matchDate {
+#matchSeason, #matchDate, #matchday {
     margin-right: 10px;
 }
 
-#homeTeam, #awayTeam, #scoreHomeTeam, #scoreAwayTeam, #goalsInfoHome, #goalsInfoAway {
+#homeTeam, #awayTeam, .score-home-team, .score-away-team, #goalsInfoHome, #goalsInfoAway {
     flex-basis: 50%;
 }
 
@@ -58,11 +63,11 @@
     margin-right: 10px;
 }
 
-#scoreHomeTeam .input-group {
+.score-home-team .input-group {
     float: right;
 }
 
-#awayTeamInput:focus, #scoreAwayTeamInput:focus, .stats-input-away input:focus, #goalsInfoAway input:focus {
+#awayTeamInput:focus, #scoreHTAwayTeamInput:focus, #scoreFTAwayTeamInput:focus, .stats-input-away input:focus, #goalsInfoAway input:focus {
     border-color: rgba(220, 53, 69, 0.8);
     box-shadow: 0 0 0 3px rgba(220, 53, 69, 0.4);
     outline: 0 none;
@@ -97,7 +102,7 @@
     background-color: #ccc;
 }
 
-#scoreHomeTeam {
+.score-home-team {
     margin-right: 10px;
 }
 

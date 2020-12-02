@@ -97,11 +97,35 @@ document.querySelectorAll(".card-header-flex").forEach(elem => {
 });
 
 const validateMatchInfo = () => {
-    const matchCompetition = document.querySelector("#matchCompetitionInput").value;
-    const matchDate = document.querySelector("#matchDateInput").value;
+    const matchSeason = document.querySelector("#matchSeasonInput").value;
     const matchStatus = document.querySelector("#matchStatusInput").value;
+    const matchDate = document.querySelector("#matchDateInput").value;
+    const matchday = document.querySelector("#matchdayInput").value;
+    const matchStadium = document.querySelector("#matchStadiumInput").value;
     const homeTeam = document.querySelector("#homeTeamInput").value;
     const awayTeam = document.querySelector("#awayTeamInput").value;
-    const scoreHomeTeam = document.querySelector("#scoreHomeTeamInput").value;
-    const scoreAwayTeam = document.querySelector("#scoreAwayTeamInput").value;
+    const scoreHTHomeTeam = document.querySelector("#scoreHTHomeTeamInput").value;
+    const scoreHTAwayTeam = document.querySelector("#scoreHTAwayTeamInput").value;
+    const scoreFTHomeTeam = document.querySelector("#scoreFTHomeTeamInput").value;
+    const scoreFTAwayTeam = document.querySelector("#scoreFTAwayTeamInput").value;
+
+    const validationsValue = [
+        matchSeason !== "null",
+        matchStatus !== "null",
+        matchDate !== "",
+        matchday !== "" || matchday.match(/^[0-9]+$/) !== null,
+        matchStadium !== "",
+        homeTeam !== "",
+        awayTeam !== "",
+        scoreHTHomeTeam !== "" || scoreHTHomeTeam.match(/^[0-9]+$/) !== null,
+        scoreHTAwayTeam !== "" || scoreHTAwayTeam.match(/^[0-9]+$/) !== null,
+        scoreFTHomeTeam !== "" || scoreFTHomeTeam.match(/^[0-9]+$/) !== null,
+        scoreFTAwayTeam !== "" || scoreFTAwayTeam.match(/^[0-9]+$/) !== null
+    ]
+
+    return validationsValue.indexOf(false) !== -1 ? false : true;
 };
+
+document.querySelector("#matchInformationValidateBtn").addEventListener("click", event => {
+    console.log(validateMatchInfo());
+})
