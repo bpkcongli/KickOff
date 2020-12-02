@@ -1,10 +1,6 @@
 // Base URL untuk kebutuhan fetching data dari API
 const baseUrl = "http://localhost:3000";
 
-/*const matchCompetitionInput = document.querySelector("#matchCompetitionInput").value;
-const matchDateInput = document.querySelector("#matchDateInput").value;
-const matchStatusInput = document.querySelector("#matchStatusInput").value;*/
-
 const homeTeamInputBtn = document.querySelector("#homeTeamInputBtn");
 const homeTeamInput = document.querySelector("#homeTeamInput");
 const searchHomeTeam = () => {
@@ -91,12 +87,21 @@ const displayAutoCompleteTeams = teams => {
 
 document.querySelectorAll(".card-header-flex").forEach(elem => {
     elem.querySelector(".card-header-text button").addEventListener("click", event => {
+        document.querySelectorAll(".card-header-submit button").forEach(elem_ => {
+            if (elem.querySelector(".card-header-submit button") !== elem_) {
+                elem_.disabled = true;
+            }
+        })
         elem.querySelector(".card-header-submit button").disabled = !elem.querySelector(".card-header-submit button").disabled;
     });
 });
 
-const validateInput = () => {};
-
-document.querySelectorAll(".card-header-submit button").forEach(elem => {
-    elem.addEventListener("click", validateInput)
-});
+const validateMatchInfo = () => {
+    const matchCompetition = document.querySelector("#matchCompetitionInput").value;
+    const matchDate = document.querySelector("#matchDateInput").value;
+    const matchStatus = document.querySelector("#matchStatusInput").value;
+    const homeTeam = document.querySelector("#homeTeamInput").value;
+    const awayTeam = document.querySelector("#awayTeamInput").value;
+    const scoreHomeTeam = document.querySelector("#scoreHomeTeamInput").value;
+    const scoreAwayTeam = document.querySelector("#scoreAwayTeamInput").value;
+};
