@@ -278,7 +278,7 @@ app.post('/api/kickoff/coaches', (req, res) => {
     sql += `VALUES ('${req.body.name}', '${req.body.fullname}', '${req.body.image_url_fr_internet}', '${req.body.image_url_fr_server}', '${req.body.date_of_birth}', '${req.body.place_of_birth}', '${req.body.nationality}', ${getAge(req.body.date_of_birth)}, '${req.body.appointed}', '${req.body.contract_until}', ${req.body.team_id})`;
     conn.query(sql, (err, results) => {
         if (err) throw err;
-    })
+    });
     sql = `SELECT * FROM coaches ORDER BY id DESC LIMIT 1`;
     conn.query(sql, (err, results) => {
         if (err) throw err;
@@ -293,8 +293,25 @@ app.post('/api/kickoff/coaches', (req, res) => {
 
 // POST a new match ... /api/kickoff/matches
 app.post("/api/kickoff/matches", (req, res) => {
-    let sql = ``;
-})
+    let sql = `INSERT INTO matches (season_id, time_date, status, matchday, home_team_id, away_team_id, score_home_team_half_time, score_away_team_half_time, score_home_team_full_time, score_away_team_full_time, stadium) `;
+    sql += `VALUES (${req.body.season_id}, '${req.body.time_date}', '${req.body.status}', ${req.body.matchday}, ${req.body.home_team_id}, ${req.body.away_team_id}, ${req.body.score_home_team_half_time}, ${req.body.score_away_team_half_time}, ${req.body.score_home_team_full_time}, ${req.body.score_away_team_full_time}, '${req.body.stadium}')`;
+    conn.query(sql, (err, results) => {
+        if (err) throw err;
+    })
+    sql = `SELECT * FROM matches ORDER BY id DESC LIMIT 1`;
+    conn.query(sql, (err, results) => {
+        if (err) throw err;
+        else res.json({
+            status: 200,
+            err: null,
+            message: "A new match is added successfully.",
+            response: results[0],
+        })
+    });
+});
+
+// PUT a team standing ... /
+app.put("/api/")
 
 // Listening on port...
 app.listen(port, (err) => {
