@@ -55,12 +55,8 @@
     margin-right: 10px;
 }
 
-#homeTeam, #awayTeam, .score-home-team, .score-away-team, #goalsInfoHome, #goalsInfoAway {
+.choose-team, .score-home-team, .score-away-team, #goalsInfoHome, #goalsInfoAway {
     flex-basis: 50%;
-}
-
-#homeTeam {
-    margin-right: 10px;
 }
 
 .score-home-team .input-group {

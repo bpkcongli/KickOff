@@ -3,61 +3,35 @@ const baseUrl = "http://localhost:3000";
 
 const homeTeamInputBtn = document.querySelector("#homeTeamInputBtn");
 const homeTeamInput = document.querySelector("#homeTeamInput");
-const searchHomeTeam = () => {
-    const homeTeamInput = document.querySelector("#homeTeamInput").value;
-    searchTeams(homeTeamInput).then(result => {
-        const autoCompleteHomeTeam = document.querySelector("#homeTeam .autocomplete-holder");
-        autoCompleteHomeTeam.innerHTML = displayAutoCompleteTeams(result);
-        if (autoCompleteHomeTeam.querySelector(".autocomplete") !== null) {
-            autoCompleteHomeTeam.querySelector(".autocomplete").style.display = "block";
-            if (autoCompleteHomeTeam.querySelector(".autocomplete").clientHeight > 200) {
-                autoCompleteHomeTeam.querySelector(".autocomplete").style.height = "200px";
-                autoCompleteHomeTeam.querySelector(".autocomplete").style.overflow = "scroll";
+const awayTeamInputBtn = document.querySelector("#awayTeamInputBtn");
+const awayTeamInput = document.querySelector("#awayTeamInput");
+
+const searchTeam = options => {
+    const teamInput = document.querySelectorAll(".team-input")[options].value;
+    searchTeamOnDB(teamInput).then(result => {
+        const chooseTeam = document.querySelectorAll(".choose-team")[options];
+        const autoCompleteHolderTeam = chooseTeam.querySelector(".autocomplete-holder");
+        autoCompleteHolderTeam.innerHTML = displayAutoCompleteTeams(result);
+        const autocompleteTeam = autoCompleteHolderTeam.querySelector(".autocomplete");
+        if (autocompleteTeam !== null) {
+            autocompleteTeam.style.display = "block";
+            if (autocompleteTeam.clientHeight > 200) {
+                autocompleteTeam.style.height = "200px";
+                autocompleteTeam.style.overflow = "scroll";
             }
-            autoCompleteHomeTeam.querySelectorAll(".autocomplete-li").forEach(elem => {
+            autoCompleteHolderTeam.querySelectorAll(".autocomplete-li").forEach(elem => {
                 elem.addEventListener("click", () => {
                     const teamChoice = elem.innerText;
-                    document.querySelector("#homeTeamInput").value = teamChoice;
-                    autoCompleteHomeTeam.querySelector(".autocomplete").style.display = "none";
+                    document.querySelectorAll(".team-input")[options].value = teamChoice;
+                    autocompleteTeam.style.display = "none";
+                    console.log(teamChoice);
                 });
             });
         }
     });
 };
-homeTeamInputBtn.addEventListener("click", searchHomeTeam);
-homeTeamInput.addEventListener("keypress", event => {
-    if (event.key === "Enter") searchHomeTeam();
-});
 
-const awayTeamInputBtn = document.querySelector("#awayTeamInputBtn");
-const awayTeamInput = document.querySelector("#awayTeamInput");
-const searchAwayTeam = () => {
-    const awayTeamInput = document.querySelector("#awayTeamInput").value;
-    searchTeams(awayTeamInput).then(result => {
-        const autoCompleteAwayTeam = document.querySelector("#awayTeam .autocomplete-holder");
-        autoCompleteAwayTeam.innerHTML = displayAutoCompleteTeams(result);
-        if (autoCompleteAwayTeam.querySelector(".autocomplete") !== null) {
-            autoCompleteAwayTeam.querySelector(".autocomplete").style.display = "block";
-            if (autoCompleteAwayTeam.querySelector(".autocomplete").clientHeight > 200) {
-                autoCompleteAwayTeam.querySelector(".autocomplete").style.height = "200px";
-                autoCompleteAwayTeam.querySelector(".autocomplete").style.overflow = "scroll";
-            }
-            autoCompleteAwayTeam.querySelectorAll(".autocomplete-li").forEach(elem => {
-                elem.addEventListener("click", () => {
-                    const teamChoice = elem.innerText;
-                    document.querySelector("#awayTeamInput").value = teamChoice;
-                    autoCompleteAwayTeam.querySelector(".autocomplete").style.display = "none";
-                });
-            }); 
-        }
-    });
-};
-awayTeamInputBtn.addEventListener("click", searchAwayTeam);
-awayTeamInput.addEventListener("keypress", event => {
-    if (event.key === "Enter") searchAwayTeam();
-})
-
-const searchTeams = async teamName => {
+const searchTeamOnDB = async teamName => {
     const nicknameOfTeams  = [];
     await fetch(`${baseUrl}/api/kickoff/teams`)
         .then(response => response.json())
@@ -84,6 +58,19 @@ const displayAutoCompleteTeams = teams => {
     }
     return result;
 };
+
+homeTeamInputBtn.addEventListener("click", () => {
+    searchTeam(0);
+});
+homeTeamInput.addEventListener("keypress", event => {
+    if (event.key === "Enter") searchTeam(0);
+});
+awayTeamInputBtn.addEventListener("click", () => {
+    searchTeam(1);
+});
+awayTeamInput.addEventListener("keypress", event => {
+    if (event.key === "Enter") searchTeam(1);
+});
 
 document.querySelectorAll(".card-header-flex").forEach(elem => {
     elem.querySelector(".card-header-text button").addEventListener("click", event => {
@@ -113,14 +100,14 @@ const validateMatchInfo = () => {
         matchSeason !== "null",
         matchStatus !== "null",
         matchDate !== "",
-        matchday !== "" || matchday.match(/^[0-9]+$/) !== null,
+        matchday !== "" && matchday.match(/^[0-9]+$/) !== null,
         matchStadium !== "",
         homeTeam !== "",
         awayTeam !== "",
-        scoreHTHomeTeam !== "" || scoreHTHomeTeam.match(/^[0-9]+$/) !== null,
-        scoreHTAwayTeam !== "" || scoreHTAwayTeam.match(/^[0-9]+$/) !== null,
-        scoreFTHomeTeam !== "" || scoreFTHomeTeam.match(/^[0-9]+$/) !== null,
-        scoreFTAwayTeam !== "" || scoreFTAwayTeam.match(/^[0-9]+$/) !== null
+        scoreHTHomeTeam !== "" && scoreHTHomeTeam.match(/^[0-9]+$/) !== null,
+        scoreHTAwayTeam !== "" && scoreHTAwayTeam.match(/^[0-9]+$/) !== null,
+        scoreFTHomeTeam !== "" && scoreFTHomeTeam.match(/^[0-9]+$/) !== null,
+        scoreFTAwayTeam !== "" && scoreFTAwayTeam.match(/^[0-9]+$/) !== null
     ]
 
     return validationsValue.indexOf(false) !== -1 ? false : true;
